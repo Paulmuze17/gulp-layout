@@ -2,23 +2,17 @@ html {
   box-sizing: border-box;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
-.page__body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
 }
 
 img {
@@ -104,4 +98,58 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+
+// HEADINGS
+.h-xxl {
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+.h-xl {
+	font-size: 3rem;
+	font-weight: bold;
+}
+.h-lg {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.h-md {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.h-sm {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+.h-xs {
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+
+// TEXT
+.t-xxl {
+	font-size: 1.375rem;
+}
+.t-xl {
+	font-size: 1.25rem;
+}
+.t-lg {
+	font-size: 1.125rem;
+}
+.t-md {
+	font-size: 1rem;
+}
+.t-sm {
+	font-size: 0.875rem;
+}
+.t-xs {
+	font-size: 0.75rem;
+}
+
+.t--bold {
+	font-weight: bold;
+}
+.t--normal {
+	font-weight: normal;
 }
