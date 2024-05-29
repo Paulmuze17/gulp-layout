@@ -1,3 +1,391 @@
-<header class="header">
-  <div class="container"></div>
+<header class="position-relative h-100 z-1">
+
+
+	<!-- desktop menu -->
+	<nav class="position-relative overflow-auto d-none d-lg-block  dark-mode-3">
+	<!-- <div class="position-fixed overflow-auto h-100 bg-gray-2 w-88 pt-18 pb-16 d-none z-3 dark-mode-3"> -->
+		<div class="position-fixed h-100 w-88 pt-18 pb-16 bg-gray-2 d-flex flex-column align-items-center justify-content-between gap-14 h-100 z-3">
+			<div class="">
+				<div class="d-flex justify-content-center mb-24">
+					<a class="btn btn-menu align-self-center text-decoration-none d-flex align-items-center justify-content-center w-56 h-56 bg-light-pink rounded-3" data-bs-toggle="offcanvas" href="#offcanvasNavbarMobile" role="button" aria-controls="offcanvasNavbarMobile"><span class="google-symbols">search</span></a>
+
+
+					<!-- <button class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<span class="btn__icon align-text-bottom google-symbols">menu</span>
+					</button> -->
+				</div>
+
+				<ul class="list-unstyled d-flex flex-column align-items-center gap-12">
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center active" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 h-32 rounded-pill mb-4 ">
+							<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+								<span class="d-block w-24 h-20">
+									<span class="btn-menu__icon google-symbols">material_design</span>
+								</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-normal lh-16 text-center">Home</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-21">
+								<span class="btn-menu__icon google-symbols">apps</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center tracking-wider">Get started</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/"  data-bs-toggle="collapse" data-bs-target="#collapseDevelop" role="button">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-22">
+								<span class="btn-menu__icon google-symbols">code</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center">Develop</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-22">
+								<span class="btn-menu__icon google-symbols">book</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center">Foundations</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-22">
+								<span class="btn-menu__icon google-symbols">palette</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center">Styles</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-22">
+								<span class="btn-menu__icon google-symbols">add_circle</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center">Components</span>
+					</a></li>
+					<li><a class="btn btn-menu text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/">
+						<span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+							<span class="d-block w-24 h-24 fs-22">
+								<span class="btn-menu__icon google-symbols">pages</span>
+							</span>
+						</span>
+						<span class="btn-menu__name d-block fs-12 fw-medium lh-16 text-center">Blog</span>
+					</a></li>
+				</ul>
+
+			</div>
+			<div >
+
+				<label class="btn btn-outline-primary btn-mode w-48 h-48" for="btn-check-mode2">
+					<input type="checkbox" class="btn-check" id="btn-check-mode2" autocomplete="off" onclick="toggleThemeMode()">
+					<div class="btn-mode__container">
+						<div class="btn-mode__light w-24 h-24 d-flex align-items-center justify-content-center mb-24">
+							<span class="btn-mode__icon align-text-bottom google-symbols">dark_mode</span>
+						</div>
+						<div class="btn-mode__dark  w-24 h-24 d-flex align-items-center justify-content-center">
+							<span class="btn-mode__icon align-text-bottom google-symbols">light_mode</span>
+						</div>
+					</div>
+				</label>
+
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-mobile offcanvas-start bg-color3 ps-88 pt-8 w-320 rounded-end-3 z-1" tabindex="-1" data-bs-backdrop="false" id="offcanvasNavbarMobile" aria-labelledby="offcanvasNavbarLabel">
+			<!-- <div class="offcanvas-header p-0 px-12">
+				<button type="button" class="btn btn-outline-none m-0 p-0 mb-8 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+					<span class="google-symbols btn-icon ng-star-inserted">menu_open</span>
+				</button>
+			</div> -->
+			<div class="offcanvas-body p-0 px-8 d-flex flex-column justify-content-between">
+				<div class="position-relative h-100">
+					<ul class="list-unstyled w-100 pb-24">
+
+						<li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Develop overview</a></li>
+						<li>
+							<ul class="list-unstyled accordion accordion-flush w-100 pe-8" id="accordionAndroid">
+
+								<li class="accordion-item w-100">
+									<h2 class="accordion-header">
+									<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview1" aria-expanded="false" aria-controls="flush-collapseDevelopOverview1">Android</button>
+									</h2>
+									<div id="flush-collapseDevelopOverview1" class="accordion-collapse collapse">
+									<div class="accordion-body py-2 pe-0 px-12">
+										<ul class="list-unstyled w-100">
+											<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">MDC-Android</a></li>
+											<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Jetpack Compose</a></li>
+										</ul>
+									</div>
+									</div>
+								</li>
+
+								<li class="accordion-item w-100">
+									<h2 class="accordion-header">
+									<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview2" aria-expanded="false" aria-controls="flush-collapseDevelopOverview2">Motion</button>
+									</h2>
+									<div id="flush-collapseDevelopOverview2" class="accordion-collapse collapse">
+									<div class="accordion-body py-2 pe-0 px-12">
+										<ul class="list-unstyled w-100">
+											<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Overview</a></li>
+											<li>
+												<ul class="list-unstyled accordion accordion-flush w-100" id="accordionAndroid2">
+													<li class="accordion-item w-100">
+														<h2 class="accordion-header">
+														<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">Android</button>
+														</h2>
+														<div id="flush-collapse1" class="accordion-collapse collapse">
+														<div class="accordion-body py-2 pe-0 px-12">
+															<ul class="list-unstyled w-100">
+																<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">MDC-Android</a></li>
+																<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Jetpack Compose</a></li>
+															</ul>
+														</div>
+														</div>
+													</li>
+
+													<li class="accordion-item w-100">
+														<h2 class="accordion-header">
+														<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Motion</button>
+														</h2>
+														<div id="flush-collapse2" class="accordion-collapse collapse">
+														<div class="accordion-body py-2 pe-0 px-12">
+															<ul class="list-unstyled w-100">
+																<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Overview</a></li>
+																<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Easing and duration</a></li>
+																<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Transitions</a></li>
+															</ul>
+														</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Transitions</a></li>
+										</ul>
+									</div>
+									</div>
+								</li>
+
+
+							</ul>
+						</li>
+						<li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Flutter</a></li>
+						<li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Web</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+	</nav>
+
+
+
+	<!-- mobile menu -->
+	<nav class="d-block d-lg-none navbar fixed-top h-100 bg-white mh-64 z-1" id="collapseDevelop">
+		<!-- top header -->
+		<div class="container-fluid">
+			<div class="d-flex align-items-center">
+				<button class=" btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="btn__icon align-text-bottom google-symbols">menu</span>
+				</button>
+				<a class="navbar-brand btn btn-menu-round d-flex gap-16 align-items-center h-40" href="/">
+					<div class="h-22 w-22">
+						<span class="btn__icon google-symbols">material_design</span>
+					</div>
+					<div class="d-none d-md-block">Material Design 3</div>
+				</a>
+			</div>
+
+			<div>
+				<button class="btn btn-menu-round w-48 h-48" type="button"><span class="btn__icon google-symbols">search</span></button>
+			</div>
+
+		</div>
+
+		<!-- offcanvas -->
+		<div class="offcanvas offcanvas-start bg-color3 pt-8 w-320 rounded-end-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header p-0 px-12">
+				<!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+				<button type="button" class="btn btn-outline-none m-0 p-0 mb-8 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+					<span class="google-symbols btn-icon ng-star-inserted">menu_open</span>
+				</button>
+			</div>
+			<div class="offcanvas-body p-0 px-8 d-flex flex-column justify-content-between">
+				<div class="position-relative h-100">
+					<ul class="list-unstyled">
+						<li><a href="/" class="text-decoration-none btn btn-menu-mobile active">
+							<span class="d-block w-24 h-24">
+								<span class="google-symbols">material_design</span>
+							</span>
+							<div>Home</div>
+						</a></li>
+						<li>
+							<a href="/" class="text-decoration-none btn btn-menu-mobile">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">apps</span>
+								</span>
+								<div>Get started</div>
+							</a>
+						</li>
+
+						<li>
+							<a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseDevelopMenu" role="button" aria-expanded="false" aria-controls="collapseDevelopMenu">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">code</span>
+								</span>
+								<div>Develop</div>
+								<span class="arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseDevelopMenu" role="button" aria-expanded="false" aria-controls="collapseDevelopMenu">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">book</span>
+								</span>
+								<div>Foundations</div>
+								<span class="arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseDevelopMenu" role="button" aria-expanded="false" aria-controls="collapseDevelopMenu">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">palette</span>
+								</span>
+								<div>Styles</div>
+								<span class="arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseDevelopMenu" role="button" aria-expanded="false" aria-controls="collapseDevelopMenu">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">add_circle</span>
+								</span>
+								<div>Components</div>
+								<span class="arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="text-decoration-none btn btn-menu-mobile">
+								<span class="d-block w-24 h-24">
+									<span class="google-symbols">pages</span>
+								</span>
+								<div>Blog</div>
+							</a>
+						</li>
+					</ul>
+
+					<!-- collapse develop -->
+					<div class="collapse-wrapper collapse collapse-horizontal position-absolute overflow-auto top-0 bottom-0 start-0 end-0 w-100" id="collapseDevelopMenu">
+
+						<a class="text-decoration-none btn btn-menu-mobile px-24" data-bs-toggle="collapse" href="#collapseDevelopMenu" role="button" aria-expanded="false" aria-controls="collapseDevelopMenu">
+							<span class="d-block w-24 h-24">
+								<div class="arrow-back-icon google-symbols">arrow_back</div>
+							</span>
+							<div>Main menu</div>
+						</a>
+						<ul class="list-unstyled w-100 px-10 ps-50">
+
+							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Develop overview</a></li>
+							<li>
+								<ul class="list-unstyled accordion accordion-flush w-100 pe-8" id="accordionAndroid">
+
+									<li class="accordion-item w-100">
+										<h2 class="accordion-header">
+										<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview1" aria-expanded="false" aria-controls="flush-collapseDevelopOverview1">Android</button>
+										</h2>
+										<div id="flush-collapseDevelopOverview1" class="accordion-collapse collapse">
+										<div class="accordion-body py-2 pe-0 px-12">
+											<ul class="list-unstyled w-100">
+												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">MDC-Android</a></li>
+												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Jetpack Compose</a></li>
+											</ul>
+										</div>
+										</div>
+									</li>
+
+									<li class="accordion-item w-100">
+										<h2 class="accordion-header">
+										<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview2" aria-expanded="false" aria-controls="flush-collapseDevelopOverview2">Motion</button>
+										</h2>
+										<div id="flush-collapseDevelopOverview2" class="accordion-collapse collapse">
+										<div class="accordion-body py-2 pe-0 px-12">
+											<ul class="list-unstyled w-100">
+												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
+												<li>
+													<ul class="list-unstyled accordion accordion-flush w-100" id="accordionAndroid2">
+														<li class="accordion-item w-100">
+															<h2 class="accordion-header">
+															<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">Android</button>
+															</h2>
+															<div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionAndroid2">
+															<div class="accordion-body py-2 pe-0 px-12">
+																<ul class="list-unstyled w-100">
+																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">MDC-Android</a></li>
+																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Jetpack Compose</a></li>
+																</ul>
+															</div>
+															</div>
+														</li>
+
+														<li class="accordion-item w-100">
+															<h2 class="accordion-header">
+															<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Motion</button>
+															</h2>
+															<div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionAndroid2">
+															<div class="accordion-body py-2 pe-0 px-12">
+																<ul class="list-unstyled w-100">
+																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
+																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Easing and duration</a></li>
+																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
+																</ul>
+															</div>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
+											</ul>
+										</div>
+										</div>
+									</li>
+
+
+								</ul>
+							</li>
+							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Flutter</a></li>
+							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Web</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="d-flex align-items-center justify-content-center h-80 z-3">
+				<!-- <div class="position-fixed bottom-0 h-80 z-3"> -->
+					<label class="btn btn-mode h-48" for="btn-check-mode1">
+						<input type="checkbox" class="btn-check" id="btn-check-mode1" autocomplete="off" onclick="toggleThemeMode()">
+						<div class="btn-mode__container btn-mode__fast">
+							<div class="btn-mode__light d-flex align-items-center justify-content-center mb-24">
+								<span class="btn-mode__icon align-text-bottom google-symbols me-8">dark_mode</span>
+								<span class="fs-14 font-google-text">Switch to light mode</span>
+							</div>
+							<div class="btn-mode__dark d-flex align-items-center justify-content-center">
+								<span class="btn-mode__icon align-text-bottom google-symbols me-8">light_mode</span>
+								<span class="fs-14 font-google-text">Switch to dark mode</span>
+							</div>
+						</div>
+
+					</label>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+	</nav>
+
+
 </header>

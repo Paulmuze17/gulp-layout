@@ -41,6 +41,7 @@ export const path = {
         // fonts: srcFolder+'/fonts/**/*.{eot,woff,woff2,ttf,svg}',
         dataFiles: srcFolder+'/data/**/*.{db,json}',
         cssVendors: srcFolder+'/scss/vendor/*.css',
+        resources: srcFolder+'/resources/**/*.*',
     },
     watch: {
         resources: srcFolder+'/files/**/*.*',

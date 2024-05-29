@@ -1,20 +1,217 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-bs-theme="light">
 	@include('partials/head.html')
 
-	<body>
-		<div class="container">
-
+	<body class="" >
+		<!-- <div> -->
 			@include('partials/header.html')
+		<!-- </div> -->
+		<!-- <div class="container-fluid ps-1 ps-lg-96 pt-64 pt-lg-0 g-0"> -->
 
-			<main class="main">
-				<picture>
-					<source srcset="/assets/images/emoji.webp" type="image/webp" />
-					<img width="190px" src="/assets/images/emoji.jpg" alt="">
-				</picture>
-			</main>
 
-			@include('partials/footer.html')
+		<div class="ps-0 ps-lg-88 pt-64 pt-lg-0">
+
+				<div class="container-xxl gx-0">
+					<main class="pt-8 px-8 px-3xl-0">
+
+							<section class="row row-cols-1 row-cols-xl-2 mb-96 g-8">
+								<!-- <h2 class="visually-hidden">Hero Section</h2> -->
+								<div class="col">
+									<div class="dark-mode-2 min-h-unset min-h-xl-544 bg-сolor1 rounded-4 p-32 p-md-56 d-flex flex-column justify-content-center h-100">
+										<div class="pt-0 pt-xl-1px">
+											<h1 class="fw-medium fs-45 fs-md-88 fs-xl-96 lh-52 lh-md-96 lh-xl-one mb-8">Material Design</h1>
+											<p class="font-google-text fs-16 fs-md-22 lh-24 lh-md-30 mb-24">Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable products with Material 3.</p>
+										</div>
+										<div class="pb-0 pb-xl-1px ms-1">
+											<a class="text-decoration-none d-flex align-items-center w-fit-content btn btn-get btn-outline-none text-center fw-475 lh-32 px-48 py-2 h-80 fs-24" style="letter-spacing: normal;" href="/get-started.html">Get started</a>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="h-100 rounded-3 overflow-hidden position-relative">
+										<figure class="hero__video-wrapper h-100 z-n1" >
+											<!-- <video class="hero__video card-img-top object-fit-cover h-100" tabindex="0" preload="auto" autoplay="" loop="" playsinline="true"><source class="h-100" src="/videos/hero-1.mp4"></video> -->
+											<video id="heroVideo" class="hero__video img-fluid object-fit-cover h-100" src="/videos/hero-1.mp4" autoplay poster="/assets/images/videos/hero-1-preview.png" tabindex="0" preload="auto" autoplay loop ></video>
+										</figure>
+
+										<button id="heroVideoBtn" class="btn rounded-pill border-1 border-dark h-40 w-40 position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center mb-4 me-4" style="cursor: pointer;" id="btnToggleVideo" aria-label="Pause Video"><span class="google-symbols fs-20">pause</span></button>
+
+									</div>
+
+								</div>
+							</section>
+
+
+						<div class="mw-1200 mx-auto">
+							<section class="mb-80 mb-xl-96">
+								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">News &amp; launches</h2>
+								<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<!-- <img class="card-img-top rounded-4 h-200" src="https://lh3.googleusercontent.com/CZUV5ERpGmSi37S437q9yGrBDpTrCTaA_BFBe1AoFuaYuYCGGRw_Qvv4j1q3lcw7YeSJYTXoUi5UhYNA_J9XFioJb2F1wOhNTfIufwLd2SNuMxHRzPI=w960" alt="..."> -->
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100 " style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/CZUV5ERpGmSi37S437q9yGrBDpTrCTaA_BFBe1AoFuaYuYCGGRw_Qvv4j1q3lcw7YeSJYTXoUi5UhYNA_J9XFioJb2F1wOhNTfIufwLd2SNuMxHRzPI=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">Material Design at Google I/O</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">See the full list of Material talks and tutorials launching at I/O 2024</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/fnAWs0CZd5Ux984uoPYWo2zKxzkSq4DgaqRfOyEMLDY2E4dJ0LtxJpuAo_vACJS9FImkgokKKGDHZ5VSMSRWUacm9Up56bolNoMPcSK-LfB2-OTunQ=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">How to get Google Fonts</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">New API updates and website upgrades make font integration easier than ever</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/cOI8fyZSqiEzQzBOzSqDjePihKw8h7OPzGn_SkeOubAUXIBFzsyP0-h1rQ7WcjeZneeOTjpUpKAv3f8xkiBkR-VXQEm-oDn7vkVsKh7vlA2myxY5CR8=w960');"></div>
+
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">Figma design kit</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Start designing and prototyping with the complete M3 library of ready-made components</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</section>
+
+							<section class="mb-80 mb-xl-96">
+								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Design system updates</h2>
+								<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/5wF10lWKwUdEXqvpGbb2AZBj1NGkW0ThazUMINJxyvkfNIEj2rC2LWCMYsomty3YUW6RVrydHNZM4tIzjsGGe5VO9E8bgT8bcw6_8q-mr15VirxP7w=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">Content design</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Guidance and best practices for UX writing and information design</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/nv-x3DNfNXIiqgGq8HbaDX1Td6rc1zDfQG0bDtywnnz4TQeaLmEgi27LQGJXvuqiJw5CRF9o2Ehmaiw4a78R8ci-pTzcQLITH4LAac1IqDZARVHfkg=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">New component: Carousel</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">An expressive new way to display a horizontally scrolling collection of content</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/gGORONloh2SSMBO05sP2gCdGr39QhbtRcDt6nZNR_hf0HhAG_VlH6e1UPvyUEXCeXtifwsyBvCqoTRQAvJVP6B26LcScxAVN4NlwDXRbLtiPINkJ61Ke=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">M3 for Jetpack Compose</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/_mrzE7Ph8pwwCeEKt7JaV-1L6bQwWyQxekfcUCG4diKZfRDDwhq5Wg4usar-ycklADM_aKJNjeQTAey2fHIK3pkFPjLHdkqmOYpAovRisMvwH1Q-m62U=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">Material Theme Builder</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Easily migrate or get started with the M3 color system and dynamic color</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/mCqqIfxaJ8IY7JjyvRUDgf26Q5bYVnpAJTQIlH1eresdLmToSp_F8qrOm0r5iqKUjJV4hPj3i2d6camRD1vKD1vA3gbC_pmlIZXlMKxX9GPa9GCIWOI=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">How the color system works</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">From color roles and accessible tone pairs to dynamic color, learn how color works in Material</p>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/fU4H9RSXzfK5SAc_dqpotTXweuGg36AtYDqq7GcR2KKBhnnmMZbqyjt1pBUdlt5ITs_qaMm87S9Krm9M4_3x7ZGZmdLYaTAXrhgmfv5ptajWHAmuuw=w960');"></div>
+											<div class="p-24">
+												<h3 class="btn-card__title fs-24 lh-32 mb-8">Using Material icons</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Learn how to use and customize the latest system icons for your UI</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</section>
+
+							<section class="mb-112">
+								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Resources</h2>
+								<div class="row row-cols-1 row-cols-lg-2 g-8">
+									<div class="col">
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475">Material blog</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">News, tutorials, and inspiration from the Material team</p>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475">Figma design kit</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Customizable styles and components to help you design with Material 3</p>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475">Get started</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Guides, videos, and tools to start building with Material</p>
+										</a>
+									</div>
+									<div class="col">
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475">Develop</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Code and developer documentation for building with Material</p>
+										</a>
+									</div>
+								</div>
+							</section>
+						</div>
+
+					</main>
+
+				</div>
+				@include('partials/footer.html')
+
 		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+		<!-- <script>
+			const collapseElementList = document.querySelectorAll('.collapse')
+			const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+		</script> -->
+		<script>
+			function toggleThemeMode() {
+				const rootTag = document.documentElement;
+				// console.log(rootTag)
+				rootTag.dataset.bsTheme = rootTag.dataset.bsTheme == "dark" ? "light" : "dark" ;
+			}
+
+			const checkbox1 = document.querySelector('#btn-check-mode1');
+			const checkbox2 = document.querySelector('#btn-check-mode2');
+
+			checkbox1.addEventListener('change', () => {
+				checkbox2.checked = checkbox1.checked;
+			});
+			checkbox2.addEventListener('change', () => {
+				checkbox1.checked = checkbox2.checked;
+			});
+
+
+			const heroVideoBtn = document.querySelector("#heroVideoBtn");
+			const heroVideo = document.querySelector("#heroVideo");
+			if(heroVideoBtn) {
+				heroVideoBtn.addEventListener("click", () => {
+					if(heroVideo) {
+						if (heroVideo.paused)
+							heroVideo.play();
+						else
+							heroVideo.pause();
+					}
+				})
+			}
+		</script>
 	</body>
 </html>
