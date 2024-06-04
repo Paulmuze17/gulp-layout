@@ -11,8 +11,8 @@
 
 		<div class="ps-0 ps-lg-88 pt-64 pt-lg-0">
 
-				<div class="container-xxl gx-0">
-					<main class="pt-8 px-8 px-3xl-0">
+				<div class="container-xxl gx-0 px-0 px-sm-8 px-3xl-0">
+					<main class="pt-8">
 
 							<section class="row row-cols-1 row-cols-xl-2 mb-96 g-8">
 								<!-- <h2 class="visually-hidden">Hero Section</h2> -->
@@ -30,12 +30,10 @@
 								<div class="col">
 									<div class="h-100 rounded-3 overflow-hidden position-relative">
 										<figure class="hero__video-wrapper h-100 z-n1" >
-											<!-- <video class="hero__video card-img-top object-fit-cover h-100" tabindex="0" preload="auto" autoplay="" loop="" playsinline="true"><source class="h-100" src="/videos/hero-1.mp4"></video> -->
-											<video id="heroVideo" class="hero__video img-fluid object-fit-cover h-100" src="/videos/hero-1.mp4" autoplay poster="/assets/images/videos/hero-1-preview.png" tabindex="0" preload="auto" autoplay loop ></video>
+											<video id="heroVideo" class="hero__video img-fluid object-fit-cover h-100" src="/videos/hero-1.mp4" poster="/assets/images/videos/hero-1-preview.png" tabindex="0" preload="auto" autoplay loop ></video>
 										</figure>
 
-										<button id="heroVideoBtn" class="btn rounded-pill border-1 border-dark h-40 w-40 position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center mb-4 me-4" style="cursor: pointer;" id="btnToggleVideo" aria-label="Pause Video"><span class="google-symbols fs-20">pause</span></button>
-
+										<button id="pausePlayVideoBtn" class="btn btn-video rounded-pill h-40 w-40 position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center mb-4 me-4" style="cursor: pointer;" id="btnToggleVideo" aria-label="Pause Video"><span class="google-symbols fs-20">pause</span></button>
 									</div>
 
 								</div>
@@ -47,31 +45,30 @@
 								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">News &amp; launches</h2>
 								<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<!-- <img class="card-img-top rounded-4 h-200" src="https://lh3.googleusercontent.com/CZUV5ERpGmSi37S437q9yGrBDpTrCTaA_BFBe1AoFuaYuYCGGRw_Qvv4j1q3lcw7YeSJYTXoUi5UhYNA_J9XFioJb2F1wOhNTfIufwLd2SNuMxHRzPI=w960" alt="..."> -->
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100 " style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/CZUV5ERpGmSi37S437q9yGrBDpTrCTaA_BFBe1AoFuaYuYCGGRw_Qvv4j1q3lcw7YeSJYTXoUi5UhYNA_J9XFioJb2F1wOhNTfIufwLd2SNuMxHRzPI=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100 " style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-8.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">Material Design at Google I/O</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">See the full list of Material talks and tutorials launching at I/O 2024</p>
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">Material Design at Google I/O</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">See the full list of Material talks and tutorials launching at I/O 2024</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/fnAWs0CZd5Ux984uoPYWo2zKxzkSq4DgaqRfOyEMLDY2E4dJ0LtxJpuAo_vACJS9FImkgokKKGDHZ5VSMSRWUacm9Up56bolNoMPcSK-LfB2-OTunQ=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-4.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">How to get Google Fonts</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">New API updates and website upgrades make font integration easier than ever</p>
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">How to get Google Fonts</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">New API updates and website upgrades make font integration easier than ever</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/cOI8fyZSqiEzQzBOzSqDjePihKw8h7OPzGn_SkeOubAUXIBFzsyP0-h1rQ7WcjeZneeOTjpUpKAv3f8xkiBkR-VXQEm-oDn7vkVsKh7vlA2myxY5CR8=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-6.png');"></div>
 
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 fw-medium mb-8">Figma design kit</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Start designing and prototyping with the complete M3 library of ready-made components</p>
+												<h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">Figma design kit</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Start designing and prototyping with the complete M3 library of ready-made components</p>
 											</div>
 										</a>
 									</div>
@@ -82,87 +79,87 @@
 								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Design system updates</h2>
 								<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/5wF10lWKwUdEXqvpGbb2AZBj1NGkW0ThazUMINJxyvkfNIEj2rC2LWCMYsomty3YUW6RVrydHNZM4tIzjsGGe5VO9E8bgT8bcw6_8q-mr15VirxP7w=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-9.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">Content design</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Guidance and best practices for UX writing and information design</p>
+												<h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">Content design</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Guidance and best practices for UX writing and information design</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/nv-x3DNfNXIiqgGq8HbaDX1Td6rc1zDfQG0bDtywnnz4TQeaLmEgi27LQGJXvuqiJw5CRF9o2Ehmaiw4a78R8ci-pTzcQLITH4LAac1IqDZARVHfkg=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-1.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">New component: Carousel</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">An expressive new way to display a horizontally scrolling collection of content</p>
+												<h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">New component: Carousel</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">An expressive new way to display a horizontally scrolling collection of content</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/gGORONloh2SSMBO05sP2gCdGr39QhbtRcDt6nZNR_hf0HhAG_VlH6e1UPvyUEXCeXtifwsyBvCqoTRQAvJVP6B26LcScxAVN4NlwDXRbLtiPINkJ61Ke=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-3.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">M3 for Jetpack Compose</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+												<h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">M3 for Jetpack Compose</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/_mrzE7Ph8pwwCeEKt7JaV-1L6bQwWyQxekfcUCG4diKZfRDDwhq5Wg4usar-ycklADM_aKJNjeQTAey2fHIK3pkFPjLHdkqmOYpAovRisMvwH1Q-m62U=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-7.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">Material Theme Builder</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Easily migrate or get started with the M3 color system and dynamic color</p>
+												<h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">Material Theme Builder</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Easily migrate or get started with the M3 color system and dynamic color</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/mCqqIfxaJ8IY7JjyvRUDgf26Q5bYVnpAJTQIlH1eresdLmToSp_F8qrOm0r5iqKUjJV4hPj3i2d6camRD1vKD1vA3gbC_pmlIZXlMKxX9GPa9GCIWOI=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-2.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">How the color system works</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">From color roles and accessible tone pairs to dynamic color, learn how color works in Material</p>
+												<h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">How the color system works</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">From color roles and accessible tone pairs to dynamic color, learn how color works in Material</p>
 											</div>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0 dark-mode-2" href="#">
-											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://lh3.googleusercontent.com/fU4H9RSXzfK5SAc_dqpotTXweuGg36AtYDqq7GcR2KKBhnnmMZbqyjt1pBUdlt5ITs_qaMm87S9Krm9M4_3x7ZGZmdLYaTAXrhgmfv5ptajWHAmuuw=w960');"></div>
+										<a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+											<div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-5.png');"></div>
 											<div class="p-24">
-												<h3 class="btn-card__title fs-24 lh-32 mb-8">Using Material icons</h3>
-												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Learn how to use and customize the latest system icons for your UI</p>
+												<h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">Using Material icons</h3>
+												<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Learn how to use and customize the latest system icons for your UI</p>
 											</div>
 										</a>
 									</div>
 								</div>
 							</section>
 
-							<section class="mb-112">
+							<section class="mb-120">
 								<h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Resources</h2>
 								<div class="row row-cols-1 row-cols-lg-2 g-8">
 									<div class="col">
-										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
-											<h3 class="btn-card__title fs-24 lh-32 fw-475">Material blog</h3>
-											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">News, tutorials, and inspiration from the Material team</p>
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Material blog</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0 text-black-2">News, tutorials, and inspiration from the Material team</p>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
-											<h3 class="btn-card__title fs-24 lh-32 fw-475">Figma design kit</h3>
-											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Customizable styles and components to help you design with Material 3</p>
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Figma design kit</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Customizable styles and components to help you design with Material 3</p>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
-											<h3 class="btn-card__title fs-24 lh-32 fw-475">Get started</h3>
-											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Guides, videos, and tools to start building with Material</p>
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Get started</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Guides, videos, and tools to start building with Material</p>
 										</a>
 									</div>
 									<div class="col">
-										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24 dark-mode-2" href="#">
-											<h3 class="btn-card__title fs-24 lh-32 fw-475">Develop</h3>
-											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0">Code and developer documentation for building with Material</p>
+										<a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+											<h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Develop</h3>
+											<p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Code and developer documentation for building with Material</p>
 										</a>
 									</div>
 								</div>
@@ -171,8 +168,8 @@
 
 					</main>
 
+					@include('partials/footer.html')
 				</div>
-				@include('partials/footer.html')
 
 		</div>
 
@@ -199,19 +196,114 @@
 				checkbox1.checked = checkbox2.checked;
 			});
 
+			// desktop navmenu logic
+			document.addEventListener("DOMContentLoaded", ()=>{
+				const pausePlayVideoBtn = document.querySelector("#pausePlayVideoBtn");
+				const heroVideo = document.querySelector("#heroVideo");
+				const iconVideo = pausePlayVideoBtn.querySelector("span");
 
-			const heroVideoBtn = document.querySelector("#heroVideoBtn");
-			const heroVideo = document.querySelector("#heroVideo");
-			if(heroVideoBtn) {
-				heroVideoBtn.addEventListener("click", () => {
-					if(heroVideo) {
-						if (heroVideo.paused)
-							heroVideo.play();
-						else
-							heroVideo.pause();
+				if(pausePlayVideoBtn) {
+					pausePlayVideoBtn.addEventListener("click", (event)=>{
+
+						if(heroVideo) {
+							if (heroVideo.paused) {
+								heroVideo.play();
+								if(iconVideo) {
+									iconVideo.innerText = "pause";
+									iconVideo.ariaLabel = "Pause Video";
+								}
+								pausePlayVideoBtn.classList.remove("active");
+							}
+							else {
+								heroVideo.pause();
+								if(iconVideo) {
+									iconVideo.innerText = "play_arrow";
+									iconVideo.ariaLabel = "Play Video";
+								}
+								pausePlayVideoBtn.classList.add("active");
+
+							}
+						}
+					});
+				}
+
+
+				let sideMenuPinned = false;
+				const desktopLeftMenuBar = document.querySelector("#desktopLeftMenuBar");
+				const menuBtns = document.querySelectorAll(".btn-menu");
+				const offcanvasSideDesktopMenu = document.querySelector("#offcanvasNavbarDesktop");
+				const bsOffcanvas = new bootstrap.Offcanvas("#offcanvasNavbarDesktop");
+				let isOffcanvasOpen = false;
+
+
+				offcanvasSideDesktopMenu.addEventListener("mouseover", (event)=>{
+					bsOffcanvas.show();
+					desktopLeftMenuBar.classList.add("border-end");
+					isWinOpen = true;
+				});
+				offcanvasSideDesktopMenu.addEventListener("mouseout", (event)=>{
+					if(isWinOpen) {
+						bsOffcanvas.hide();
+						desktopLeftMenuBar.classList.remove("border-end");
+						isWinOpen = false;
 					}
+				});
+
+				menuBtns.forEach((element, key)=>{
+					element.addEventListener("mouseover", (event)=>{
+						console.log(123)
+						if(offcanvasSideDesktopMenu) {
+
+							if(element.dataset.menuList ) {
+								const datasetMenuListName = element.dataset.menuList;
+								const menuListElement = document.querySelector(`#navMenuList-${datasetMenuListName}`);
+								const navMenuListContainer = document.querySelector("#navMenuListContainer");
+
+								if(menuListElement) {
+
+
+									for (const child of navMenuListContainer.children) {
+										child.style.display = "none";
+									}
+									menuListElement.style.display = "";
+
+									if(!isOffcanvasOpen) {
+										bsOffcanvas.show();
+										isOffcanvasOpen = true;
+									}
+
+									desktopLeftMenuBar.classList.add("border-end");
+
+								} else {
+									if(isOffcanvasOpen) {
+										bsOffcanvas.hide();
+										isOffcanvasOpen = false;
+									}
+									desktopLeftMenuBar.classList.remove("border-end");
+
+								}
+
+							} else {
+								if(isOffcanvasOpen) {
+									bsOffcanvas.hide();
+									isOffcanvasOpen = false;
+								}
+
+								desktopLeftMenuBar.classList.remove("border-end");
+
+							}
+						}
+						// offcanvasSideDesktopMenu.classList.add("show")
+
+					});
 				})
-			}
+
+
+			})
+
+
+
+
 		</script>
 	</body>
 </html>

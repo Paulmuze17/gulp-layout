@@ -22,6 +22,7 @@ import { cache } from "./gulp-settings/tasks/cache.js";
 import { rewrite } from "./gulp-settings/tasks/rewrite.js";
 import browserSync from "browser-sync";
 
+
 // passing values into global var
 // In web globalVar is 'window', in Node.js is 'global'
 global.app = {
