@@ -345,13 +345,21 @@ $utilities: (
 	// --bs-btn-active-color: var(--bs-btn-hover-color);
 	--bs-btn-active-bg: var(--card-btn-hover-bg);
 	--bs-btn-active-border-color: transparent;
-	outline: 0;
 	border-radius: var(--bs-border-radius-xl);
 
-	transition: border-radius 0.2s ease-in;
+	transition: border-radius .3s cubic-bezier(.2,0,0,1), background-color .3s cubic-bezier(.2,0,0,1);
+	outline: 0;
+
+	& .btn-card__title {
+		transition: font-variation-settings .3s cubic-bezier(.2,0,0,1);
+	}
 
 	&:hover {
 		outline: 0;
+
+		& .btn-card__title {
+			font-variation-settings: "GRAD" 50;
+		}
 	}
 
 	&:active,
@@ -365,15 +373,13 @@ $utilities: (
 	}
 
 	&:active .btn-card__title {
-		font-variation-settings: "GRAD" 0, "wght" 18;
-		letter-spacing: 0.3px !important;
+		font-variation-settings: "GRAD" -50;
 	}
 
 	&:focus,
 	&:focus-visible {
 		outline: 2px solid var(--text-color-black);
 		--bs-btn-bg: var(--card-btn-hover-bg);
-		// background-color: var(--card-btn-hover-bg) !important;
 	}
 }
 
@@ -759,12 +765,15 @@ $utilities: (
 	}
 
 	& .btn__icon {
-		color: var(--text-color-dark);
+		color: inherit;
 	}
 	& .btn__text {
-		color: var(--text-color-dark);
+		color: inherit;
 	}
 
+}
+.btn-menu-round-bright {
+	--bs-btn-color: var(--text-color-dark);
 }
 .btn-menu-underline {
 	// --bs-btn-font-weight: 600;
@@ -1208,8 +1217,27 @@ $utilities: (
 		}
 	}
 
+
+
 	.btn-menu-round {
+		// --bs-btn-color: var(--text-color-light-2);
 		--bs-btn-color: var(--text-color-light-2);
+		--bs-btn-hover-color: var(--text-color-light-2);
+		--bs-btn-active-color: var(--text-color-light-2);
+
+		&:hover {
+			background: var(--bg-color-linear-4);
+		}
+
+		&:active  {
+			background: var(--bg-color-linear-5);
+		}
+
+	}
+	.btn-menu-round-bright {
+		--bs-btn-color: var(--text-color-light);
+		--bs-btn-hover-color: var(--text-color-light);
+		--bs-btn-active-color: var(--text-color-light);
 	}
 }
 
