@@ -237,15 +237,17 @@
 
 
 				offcanvasSideDesktopMenu.addEventListener("mouseover", (event)=>{
-					bsOffcanvas.show();
-					desktopLeftMenuBar.classList.add("border-end");
-					isWinOpen = true;
+					if(!isOffcanvasOpen) {
+						bsOffcanvas.show();
+						desktopLeftMenuBar.classList.add("border-end");
+						isOffcanvasOpen = true;
+					}
 				});
 				offcanvasSideDesktopMenu.addEventListener("mouseout", (event)=>{
-					if(isWinOpen) {
+					if(isOffcanvasOpen) {
 						bsOffcanvas.hide();
 						desktopLeftMenuBar.classList.remove("border-end");
-						isWinOpen = false;
+						isOffcanvasOpen = false;
 					}
 				});
 
