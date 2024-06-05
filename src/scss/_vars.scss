@@ -21,6 +21,7 @@
 //   --bs-secondary: #f8f1f6;
   --bs-border-radius: 48px;
   --btn-bg: #6442d6 ;
+  --color-purple-1: #6442d6 ;
   --bs-btn-active-bg: #6442d6;
   --card-btn-hover-bg: #dcdaf5;
   --bs-body-bg: #fefbff;
@@ -31,6 +32,7 @@
 	// --bs-btn-hover-bg: #805df6;
 	// --bs-btn-border-color: transparent;
 	// --bs-btn-bg: red !important;
+	--color-pure-white: #fff;
 
 	--text-color-black: #1a0056;
 	--text-color-dark: #1c1b1d;
@@ -87,6 +89,9 @@
 
 	--footer-line: #E1E3E1;
 
+	--footer-grid-template-columns: var(--footer-grid-template-columns-lg);
+	--footer-grid-template-columns-lg: 3fr 1fr 1fr 1fr;
+	--footer-grid-template-columns-sm: 1fr 1fr 1fr;
 
 	// --accordion-icon-color-default: #000;
 	// --accordion-icon-color-active: #000;

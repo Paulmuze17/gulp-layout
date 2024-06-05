@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "./vendor/normalize";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -19,6 +20,7 @@
 
 
 $enable-rfs: false;
+$enable-cssgrid: true;
 
 $zindex-levels: (
   n1: -1,
@@ -72,6 +74,7 @@ $default-values: (
 	// 21: 21px,
 	22: 22px,
 	24: 24px,
+	25: 25px,
 	26: 26px,
 	30: 30px,
 	32: 32px,
@@ -305,6 +308,31 @@ $utilities: (
 
 
 // CUSTOM BUTTONS
+a {
+	border-radius: 4px;
+}
+a:focus {
+	margin: -1px;
+    border: 1px solid var(--color-purple-1);
+    outline: 0;
+    box-shadow: inset 0 0 0 1px var(--color-pure-white);
+}
+
+.btn-focusable,
+.btn-focusable-border {
+	&:focus-visible,
+	&:hover:focus-visible {
+		border: 2px solid var(--dark-mode-bg-color-2);
+		outline: 0;
+		box-shadow: inset 0 0 0 2px var(--color-pure-white);
+	}
+}
+.btn-focusable-border {
+	&:focus-visible,
+	&:hover:focus-visible {
+		border-radius: 18px;
+	}
+}
 .btn-get {
 	text-align: center;
 	--bs-btn-font-weight: 600;
@@ -331,7 +359,9 @@ $utilities: (
 	&:active {
 		--bs-btn-border-radius: 16px;
 		font-variation-settings: "GRAD" -50;
-
+	}
+	&:focus-visible {
+		margin: -2px;
 	}
 }
 
@@ -676,6 +706,15 @@ $utilities: (
 
 	&:active{
 		text-decoration: underline;
+	}
+
+	&:focus-visible {
+		// margin: -1px;
+		border: 1px solid var(--color-purple-1);
+		// // --bs-btn-active-bg: var( --color-purple-1);
+
+		// outline: 0;
+		// box-shadow: inset 0 0 0 1px var(--color-pure-white);
 	}
 
 }
@@ -1033,6 +1072,7 @@ $utilities: (
 		--bs-btn-hover-color: var(--text-color-light-2);
 		--bs-btn-active-color: var(--text-color-light-2);
 		// --bs-btn-active-bg: var(--bg-color-menu-btn-active);
+		color: var(--text-color-light-2);
 
 		&:hover {
 
@@ -1206,3 +1246,31 @@ $utilities: (
 .text-purple:hover {
 	color: var(--text-color-dark-4) !important;
 }
+
+
+.grid-test {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	justify-content: space-between;
+	max-width: 1200px;
+}
+
+.grid-footer {
+	grid-template-columns: var(--footer-grid-template-columns-lg);
+	// -ms-grid-columns: 3fr 1fr 1fr 1fr;
+
+}
+
+@include media-breakpoint-down(lg) {
+
+	.grid-footer {
+		grid-template-columns: var(--footer-grid-template-columns-sm);
+		// -ms-grid-columns: 3fr 1fr 1fr 1fr;
+
+	}
+
+}
+
+
+
