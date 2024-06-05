@@ -73,22 +73,22 @@
 			<div >
 
 				<label class="btn btn-mode btn-focusable w-48 h-48 special" for="btn-check-mode2" tabindex="0">
-					<input type="checkbox" class="btn-check" id="btn-check-mode2" autocomplete="off" onclick="toggleThemeMode()">
-					<div class="btn-mode__container">
-						<div class="btn-mode__light w-24 h-24 d-flex align-items-center justify-content-center mb-24">
+					<input type="checkbox" class="btn-check" id="btn-check-mode2" onclick="toggleThemeMode()">
+					<span class="btn-mode__container d-block">
+						<span class="btn-mode__light w-24 h-24 d-flex align-items-center justify-content-center mb-24">
 							<span class="btn__icon align-text-bottom google-symbols">dark_mode</span>
-						</div>
-						<div class="btn-mode__dark  w-24 h-24 d-flex align-items-center justify-content-center">
+						</span>
+						<span class="btn-mode__dark  w-24 h-24 d-flex align-items-center justify-content-center">
 							<span class="btn__icon align-text-bottom google-symbols">light_mode</span>
-						</div>
-					</div>
+						</span>
+					</span>
 				</label>
 
 			</div>
 		</div>
 
 		<!-- offcanvas -->
-		<div class="offcanvas offcanvas-start bg-color3 ps-88 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" data-bs-backdrop="false" id="offcanvasNavbarDesktop" aria-labelledby="offcanvasNavbarLabel">
+		<div class="offcanvas offcanvas-start bg-color3 ps-88 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" data-bs-backdrop="false" id="offcanvasNavbarDesktop">
 
 			<div class="offcanvas-body p-0 px-8 d-flex flex-column justify-content-between">
 				<div id="navMenuListContainer" class="position-relative h-100">
@@ -383,7 +383,7 @@
 		<!-- top header -->
 		<div class="container-fluid p-0">
 			<div class="d-flex align-items-center">
-				<button id="btnMenuMobile" class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<button id="btnMenuMobile" class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarMobileMenu" aria-controls="offcanvasNavbarMobileMenu" aria-label="Toggle navigation">
 					<span class="btn__icon align-text-bottom google-symbols">menu</span>
 				</button>
 				<a class="btn btn-menu-round btn-menu-round-bright d-flex gap-16 align-items-center h-40" href="/">
@@ -401,7 +401,7 @@
 		</div>
 
 		<!-- offcanvas -->
-		<div class="offcanvas offcanvas-start bg-color3 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+		<div class="offcanvas offcanvas-start bg-color3 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" id="offcanvasNavbarMobileMenu">
 			<div class="offcanvas-header p-0 px-12">
 				<!-- <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
 					<span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
@@ -410,21 +410,24 @@
 			<div class="offcanvas-body p-0  d-flex flex-column justify-content-between">
 				<div class="position-relative h-100">
 					<ul class="list-unstyled px-8">
-						<button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-							<span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
-						</button>
+						<li>
+							<button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+								<span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+							</button>
+						</li>
+
 						<li><a href="/" class="text-decoration-none btn btn-menu-mobile active">
 							<span class="d-block w-24 h-24">
 								<span class="btn__icon google-symbols">material_design</span>
 							</span>
-							<div class="btn__text">Home</div>
+							<span class="btn__text">Home</span>
 						</a></li>
 						<li>
 							<a href="/" class="text-decoration-none btn btn-menu-mobile">
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">apps</span>
 								</span>
-								<div class="btn__text">Get started</div>
+								<span class="btn__text">Get started</span>
 							</a>
 						</li>
 
@@ -433,7 +436,7 @@
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">code</span>
 								</span>
-								<div class="btn__text">Develop</div>
+								<span class="btn__text">Develop</span>
 								<span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
 							</a>
 						</li>
@@ -442,7 +445,7 @@
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">book</span>
 								</span>
-								<div class="btn__text">Foundations</div>
+								<span class="btn__text">Foundations</span>
 								<span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
 							</a>
 						</li>
@@ -451,7 +454,7 @@
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">palette</span>
 								</span>
-								<div class="btn__text">Styles</div>
+								<span class="btn__text">Styles</span>
 								<span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
 							</a>
 						</li>
@@ -460,7 +463,7 @@
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">add_circle</span>
 								</span>
-								<div class="btn__text">Components</div>
+								<span class="btn__text">Components</span>
 								<span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
 							</a>
 						</li>
@@ -469,7 +472,7 @@
 								<span class="d-block w-24 h-24">
 									<span class="btn__icon google-symbols">pages</span>
 								</span>
-								<div class="btn__text">Blog</div>
+								<span class="btn__text">Blog</span>
 							</a>
 						</li>
 					</ul>
@@ -481,9 +484,9 @@
 						</button>
 						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseDevelopMenuMobile" role="button" aria-expanded="false" aria-controls="collapseDevelopMenuMobile">
 							<span class="d-block w-24 h-24">
-								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
+								<span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
 							</span>
-							<div class="btn__text">Main menu</div>
+							<span class="btn__text">Main menu</span>
 						</a>
 						<ul class="list-unstyled w-100 px-10 ps-42">
 
@@ -519,7 +522,7 @@
 						</button>
 						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseFoundationsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseFoundationsMenuMobile">
 							<span class="d-block w-24 h-24">
-								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
+								<span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
 							</span>
 							<div class="btn__text">Main menu</div>
 						</a>
@@ -621,92 +624,7 @@
 						</button>
 						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseStylesMenuMobile" role="button" aria-expanded="false" aria-controls="collapseStylesMenuMobile">
 							<span class="d-block w-24 h-24">
-								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
-							</span>
-							<div class="btn__text">Main menu</div>
-						</a>
-						<ul class="list-unstyled w-100 px-10 ps-42">
-
-							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Styles overview</a></li>
-							<li>
-								<ul class="list-unstyled accordion accordion-flush w-100 ps-1">
-
-									<li class="accordion-item w-100">
-										<h2 class="accordion-header">
-											<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesColor" aria-expanded="false" aria-controls="flush-collapseStylesColor">Color</button>
-										</h2>
-										<div id="flush-collapseStylesColor" class="accordion-collapse collapse">
-										<div class="accordion-body py-2 pe-0 ps-11">
-											<ul class="list-unstyled w-100">
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color system</a></li>
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color roles</a></li>
-												<li>
-													<ul class="list-unstyled accordion accordion-flush w-100 ps-1">
-
-														<li class="accordion-item w-100">
-															<h2 class="accordion-header">
-																<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesColorSchemes" aria-expanded="false" aria-controls="flush-collapseStylesColorSchemes">Color schemes</button>
-															</h2>
-															<div id="flush-collapseStylesColorSchemes" class="accordion-collapse collapse">
-															<div class="accordion-body py-2 pe-0 ps-11">
-																<ul class="list-unstyled w-100">
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Choosing a scheme</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color roles</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Static</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Dynamic</a></li>
-																</ul>
-															</div>
-															</div>
-														</li>
-
-													</ul>
-												</li>
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Advanced</a></li>
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color resources</a></li>
-											</ul>
-										</div>
-										</div>
-									</li>
-
-								</ul>
-							</li>
-
-							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Elevation</a></li>
-							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Icons</a></li>
-							<li>
-								<ul class="list-unstyled accordion accordion-flush w-100 ps-1">
-
-									<li class="accordion-item w-100">
-										<h2 class="accordion-header">
-											<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesMotion" aria-expanded="false" aria-controls="flush-collapseStylesMotion">Motion</button>
-										</h2>
-										<div id="flush-collapseStylesMotion" class="accordion-collapse collapse">
-											<div class="accordion-body py-2 pe-0 ps-11">
-												<ul class="list-unstyled w-100">
-													<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
-													<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Easing and duration</a></li>
-													<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
-												</ul>
-											</div>
-										</div>
-									</li>
-
-								</ul>
-							</li>
-
-							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Shape</a></li>
-							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Typography</a></li>
-						</ul>
-					</div>
-
-					<!-- collapse submenu -> components -->
-					<div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3 px-8" id="collapseStylesMenuMobile">
-						<button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-							<span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
-						</button>
-						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseStylesMenuMobile" role="button" aria-expanded="false" aria-controls="collapseStylesMenuMobile">
-							<span class="d-block w-24 h-24">
-								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
+								<span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
 							</span>
 							<div class="btn__text">Main menu</div>
 						</a>
@@ -791,7 +709,7 @@
 						</button>
 						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseComponentsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseComponentsMenuMobile">
 							<span class="d-block w-24 h-24">
-								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
+								<span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
 							</span>
 							<div class="btn__text">Main menu</div>
 						</a>
@@ -875,9 +793,9 @@
 								<ul class="list-unstyled accordion accordion-flush w-100 ps-1">
 									<li class="accordion-item w-100">
 										<h2 class="accordion-header">
-											<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsNavigation" aria-expanded="false" aria-controls="flush-collapseComponentsNavigation">Sheets</button>
+											<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsSheets" aria-expanded="false" aria-controls="flush-collapseComponentsSheets">Sheets</button>
 										</h2>
-										<div id="flush-collapseComponentsNavigation" class="accordion-collapse collapse">
+										<div id="flush-collapseComponentsSheets" class="accordion-collapse collapse">
 										<div class="accordion-body py-2 pe-0 ps-11">
 											<ul class="list-unstyled w-100">
 												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Bottom sheets</a></li>
@@ -903,22 +821,21 @@
 
 				<!-- MODE SWITCHER -->
 				<div class="d-flex align-items-center justify-content-center h-84 z-3">
-					<!-- <div class="position-fixed bottom-0 h-80 z-3"> -->
-						<label class="btn btn-mode h-48 px-16 py-12" for="btn-check-mode1">
-							<input type="checkbox" class="btn-check" id="btn-check-mode1" autocomplete="off" onclick="toggleThemeMode()">
-						<div class="btn-mode__container btn-mode__fast">
-							<div class="btn-mode__light d-flex align-items-center justify-content-center mb-24">
+					<label class="btn btn-mode h-48 px-16 py-12" for="btn-check-mode1">
+						<input type="checkbox" class="btn-check" id="btn-check-mode1" onclick="toggleThemeMode()">
+						<span class="d-block btn-mode__container btn-mode__fast">
+							<span class="btn-mode__light d-flex align-items-center justify-content-center mb-24">
 								<span class="btn__icon align-text-bottom google-symbols me-8">dark_mode</span>
 								<span class="fs-16 font-google-text"> Switch to dark mode </span>
-							</div>
-							<div class="btn-mode__dark d-flex align-items-center justify-content-center">
+							</span>
+							<span class="btn-mode__dark d-flex align-items-center justify-content-center">
 								<span class="btn__icon align-text-bottom google-symbols me-8">light_mode</span>
 								<span class="fs-16 font-google-text"> Switch to light mode </span>
-							</div>
-						</div>
+							</span>
+						</span>
 
 					</label>
-				<!-- </div> -->
+				</div>
 
 
 

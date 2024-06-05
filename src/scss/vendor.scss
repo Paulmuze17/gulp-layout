@@ -1,4 +1,3 @@
-@use "sass:map";
 @import "./vendor/normalize";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -18,8 +17,9 @@
 // стили для скролла simplebar
 // @import "../../node_modules/simplebar/dist/simplebar.min";
 
-
+// turn off rfs
 $enable-rfs: false;
+//enable grid system
 $enable-cssgrid: true;
 
 $zindex-levels: (
@@ -36,22 +36,14 @@ $accordion-icon-active-color: #4d4256;
 $accordion-icon-color: #4d4256;
 $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#{$accordion-icon-active-color}"><path d="m280-400 200-200 200 200H280Z"/></svg>');
 $accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#{$accordion-icon-color}"><path d="M480-341.91 248.91-573h462.18L480-341.91Z"/></svg>');
-// $accordion-button-active-color: red;
-// $accordion-button-color: green;
 $accordion-icon-width: 23px;
 $accordion-icon-transform: rotate(0);
 $accordion-bg: transparent;
 $accordion-button-active-bg: var(--bg-color-accordion);
-// $accordion-button-active-color:          green;
-// $accordion-border-radius: var(--menu-item-border-radius);
-// $accordion-border-radius: var(--border-radius-1);
-// $accordion-inner-border-radius: var(--menu-item-border-radius);
 $accordion-border-width: 0;
 $accordion-padding-y: 8px;
 $accordion-padding-x: 16px;
-// $accordion-button-active-bg: transparent;
 $accordion-button-bg: transparent;
-
 
 
 // all values of sizes
@@ -71,7 +63,6 @@ $default-values: (
 	18: 18px,
 	19: 19px,
 	20: 20px,
-	// 21: 21px,
 	22: 22px,
 	24: 24px,
 	25: 25px,
@@ -302,11 +293,6 @@ $utilities: (
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 
-// .opz {
-// 	font-variation-settings: "GRAD" 0, "opsz" 17;
-// }
-
-
 // CUSTOM BUTTONS
 a {
 	border-radius: 4px;
@@ -349,24 +335,18 @@ a:focus {
 	--bs-btn-border-radius: var(--border-radius-1);
 
     transition: all .2s cubic-bezier(.2,0,0,1);
-	// transition: var( --transition-br-1);
-	// transition: opacity .2s cubic-bezier(.2,0,0,1);
-
-	&:hover {
-		// opacity: .08;
-	}
 
 	&:active {
 		--bs-btn-border-radius: 16px;
 		font-variation-settings: "GRAD" -50;
 	}
+
 	&:focus-visible {
 		margin: -2px;
 	}
 }
 
 .btn-card {
-	// rounded-4 overflow-hidden bg-secondary text-dark
 	--bs-btn-font-weight: 475;
 	--bs-btn-color: var(--text-color-dark);
 	--bs-btn-bg: var(--bs-gray-200);
@@ -429,16 +409,13 @@ a:focus {
 
 	z-index: -1;
 	transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
-	cursor: pointer;
 
 	& .btn__icon {
-		// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
 		background-position: center;
 		color: inherit;
 	}
 
 	& .btn__text {
-		// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
 		color: inherit;
 	}
 
@@ -502,6 +479,7 @@ a:focus {
 		}
 
 		&.active {
+
 			& .btn__text {
 				font-variation-settings: "GRAD" 125;
 			}
@@ -620,13 +598,6 @@ a:focus {
 			font-variation-settings: "GRAD" -50;
 		}
 	}
-
-
-
-
-
-
-
 }
 
 
@@ -656,22 +627,17 @@ a:focus {
 	}
 
 	&:active .btn__icon {
-		// font-variation-settings: 'FILL' 1, "GRAD" 0, "wght" 18;
-		// letter-spacing: 0.3px !important;
 		font-variation-settings: "wght" 300, "opsz" 24;
-		// font-variation-settings: "wght" 600, "opsz" 24;
 	}
+
 	&:active  {
 		background: var(--bg-color-menu-btn-active-2);
-		// font-variation-settings: 'FILL' 1, "GRAD" 0, "wght" 18;
-		// letter-spacing: 0.3px !important;
-		// font-variation-settings: "wght" 300, "opsz" 24;
-		// font-variation-settings: "wght" 600, "opsz" 24;
 	}
 
 	& .btn__icon {
 		color: inherit;
 	}
+
 	& .btn__text {
 		color: inherit;
 	}
@@ -698,7 +664,6 @@ a:focus {
 	transition: font-weight 0.3s ease-in-out;
 
 	&:hover span {
-		// background: var(--bg-color-linear-3);
 		text-decoration: underline;
 		text-underline-offset: 2px;
 		text-decoration-style: solid;
@@ -709,17 +674,11 @@ a:focus {
 	}
 
 	&:focus-visible {
-		// margin: -1px;
 		border: 1px solid var(--color-purple-1);
-		// // --bs-btn-active-bg: var( --color-purple-1);
-
-		// outline: 0;
-		// box-shadow: inset 0 0 0 1px var(--color-pure-white);
 	}
 
 }
 .btn-video {
-	// rounded-4 overflow-hidden bg-secondary text-dark
 	// --bs-btn-font-weight: 475;
 	--bs-btn-color: var(--text-color-dark-5);
 	--bs-btn-bg: transparent;
@@ -737,7 +696,6 @@ a:focus {
 	transition: border-radius 0.2s ease-in;
 
 	&.active {
-		// --bs-btn-bg: var(--text-color-dark-5);
 		--bs-btn-active-bg: var(--text-color-dark-5);
 		--bs-btn-active-color: var(--text-color-light-6);
 	}
@@ -747,34 +705,18 @@ a:focus {
 		--bs-btn-active-border-color: transparent;
 		--bs-btn-active-color: var(--text-color-dark-5);
 	}
+
 	&:active.active {
 		--bs-btn-active-border-color: var(--text-color-dark-5);
 		--bs-btn-active-bg: var(--text-color-light-7);
 		--bs-btn-active-color: var(--text-color-light-6);
 
 	}
+
 	&:hover:active.active {
 		--bs-btn-active-border-color: transparent;
 		--bs-btn-active-color: var(--text-color-dark-5);
 		--bs-btn-active-bg: var(--text-color-light-7);
-	}
-
-	:focus-visible {
-		// --bs-btn-bg: red !important;
-
-	}
-
-	&:active,
-	&:focus,
-	&:focus-visible {
-		// border-radius: var(--card-border-radius) !important;
-	}
-
-	&:focus,
-	&:focus-visible {
-		// outline: 2px solid var(--text-color-black);
-		// --bs-btn-bg: var(--card-btn-hover-bg);
-		// background-color: var(--card-btn-hover-bg) !important;
 	}
 }
 .btn-mode {
@@ -793,25 +735,20 @@ a:focus {
 	outline: 1px solid var(--text-color-grey-1);
 	transition: font-weight 0.3s ease-in-out;
 	transition: transform .3s cubic-bezier(.2,0,0,1);
-	// border: 1px solid black;
-	// transform: translateY(42px);
 
 	& input[type="checkbox"] {
 
-		&:checked + div {
+		&:checked + .btn-mode__container {
 			transform: translateY(-48px);
 		}
-
-		// &:not(:checked) + div {
-		// }
 	}
 	&.special input[type="checkbox"] {
 
-		&:checked + div {
+		&:checked + .btn-mode__container {
 			transform: translateY(-44px);
 		}
 
-		&:not(:checked) + div {
+		&:not(:checked) + .btn-mode__container {
 			transform: translateY(4px);
 		}
 	}
@@ -825,14 +762,13 @@ a:focus {
 
 	&.active .btn-menu__box{
 		background-color: var(--bg-color-menu-btn-active);
-		// fill: inherit;
 		color: inherit;
 	}
 	&.active .btn-menu__name{
-		// font-weight: 500 !important;
 		color: inherit;
 
 	}
+
 	.btn-menu__icon::before {
 		content: "";
 	}
@@ -848,73 +784,30 @@ a:focus {
 
 		& .btn__icon {
 			font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
-			// color: var(--text-color-dark-2);
 		}
 
-		.btn-menu__box {
-			position: relative;
-			overflow: hidden;
-
-			&::after {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background: rgba(0, 0, 0, 0.1);
-
-			}
-			transition: background-color 0.1s ease-in-out;
-
-			& .btn-menu__icon {
-				background-position: center;
-				transition: transform 0.1s ease-in-out;
-				// transform:scale(1.05);
-
-				animation-name: menuItemAnimation;
-				// animation-duration: 5s;
-					// font-variation-settings: 'wght' 700;
-					font-weight: 700;
-
-
-					  font-variation-settings:
-					  'FILL' 1,
-					  'wght' 400,
-					  'GRAD' 0,
-					  'opsz' 24;
-
-			}
-		}
 	}
 
 
 }
-// .accordion {
-// 	position: relative;
-// 	z-index: 3000;
-// }
+
 .btn-mode__container {
 	transition: transform 0.3s ease-in-out;
 }
 .btn-mode__fast {
 	transition: transform 0.05s ease-in-out;
 }
+
+// accordion
 .accordion-body {
 	background-color: transparent;
-	// color: white
 }
-
-
 
 .accordion-button {
 	border-radius: var(--border-radius-1) !important;
 	overflow: hidden;
 }
 
-// accordion
 .accordion-button:hover {
 	--bs-accordion-active-bg: var(--text-color-light);
 }
@@ -931,8 +824,6 @@ a:focus {
 
 // Color mode variables in _root.scss
 @include color-mode(dark) {
-	// --text-main: var(--text-color-light);
-	// --text-color-dark-2: #cbc4cc;
 	.accordion-button {
 		fill: var(--text-color-light-2);
 	}
@@ -948,7 +839,6 @@ a:focus {
 		--bs-accordion-active-color: var(--text-color-light-2);
 	}
 
-	// CSS variable overrides here...
 	body {
 		background-color: var(--dark-mode-bg-color);
 	}
@@ -967,10 +857,6 @@ a:focus {
 		background-color: var(--dark-mode-bg-color-3) !important;
 	}
 
-	.footer__line {
-		// color: red !important;
-		// stroke: red;
-	}
 	.text-dark,
 	.text-black {
 		color: var(--text-color-light) !important;
@@ -1149,8 +1035,6 @@ a:focus {
 		}
 	}
 
-
-
 	.btn-menu-round {
 		// --bs-btn-color: var(--text-color-light-2);
 		--bs-btn-color: var(--text-color-light-2);
@@ -1166,14 +1050,13 @@ a:focus {
 		}
 
 	}
+
 	.btn-menu-round-bright {
 		--bs-btn-color: var(--text-color-light);
 		--bs-btn-hover-color: var(--text-color-light);
 		--bs-btn-active-color: var(--text-color-light);
 	}
 }
-
-
 
 
 @keyframes collapseAnimation {
@@ -1247,18 +1130,8 @@ a:focus {
 	color: var(--text-color-dark-4) !important;
 }
 
-
-.grid-test {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: 3fr 1fr 1fr 1fr;
-	justify-content: space-between;
-	max-width: 1200px;
-}
-
 .grid-footer {
 	grid-template-columns: var(--footer-grid-template-columns-lg);
-	// -ms-grid-columns: 3fr 1fr 1fr 1fr;
 
 }
 
@@ -1266,11 +1139,5 @@ a:focus {
 
 	.grid-footer {
 		grid-template-columns: var(--footer-grid-template-columns-sm);
-		// -ms-grid-columns: 3fr 1fr 1fr 1fr;
-
 	}
-
 }
-
-
-
