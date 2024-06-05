@@ -33,16 +33,17 @@ $zindex-levels: (
 $accordion-icon-active-color: #4d4256;
 $accordion-icon-color: #4d4256;
 $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#{$accordion-icon-active-color}"><path d="m280-400 200-200 200 200H280Z"/></svg>');
-$accordion-button-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#{$accordion-icon-color}"><path d="M480-341.91 248.91-573h462.18L480-341.91Z"/></svg>');
-
-
-$accordion-icon-width: 22px;
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#{$accordion-icon-color}"><path d="M480-341.91 248.91-573h462.18L480-341.91Z"/></svg>');
+// $accordion-button-active-color: red;
+// $accordion-button-color: green;
+$accordion-icon-width: 23px;
 $accordion-icon-transform: rotate(0);
 $accordion-bg: transparent;
 $accordion-button-active-bg: var(--bg-color-accordion);
 // $accordion-button-active-color:          green;
-$accordion-border-radius: var(--menu-item-border-radius);
-$accordion-inner-border-radius: var(--menu-item-border-radius);
+// $accordion-border-radius: var(--menu-item-border-radius);
+// $accordion-border-radius: var(--border-radius-1);
+// $accordion-inner-border-radius: var(--menu-item-border-radius);
 $accordion-border-width: 0;
 $accordion-padding-y: 8px;
 $accordion-padding-x: 16px;
@@ -60,10 +61,13 @@ $default-values: (
 	4: 4px,
 	8: 8px,
 	9: 9px,
+	11: 11px,
 	12: 12px,
 	14: 14px,
 	16: 16px,
+	17: 17px,
 	18: 18px,
+	19: 19px,
 	20: 20px,
 	// 21: 21px,
 	22: 22px,
@@ -97,8 +101,8 @@ $default-values: (
 	190: 190px,
 	200: 200px,
 	240: 240px,
-	328: 328px,
 	320: 320px,
+	328: 328px,
 	544: 544px,
 	570: 570px,
 	610: 610px,
@@ -299,6 +303,8 @@ $utilities: (
 // 	font-variation-settings: "GRAD" 0, "opsz" 17;
 // }
 
+
+// CUSTOM BUTTONS
 .btn-get {
 	text-align: center;
 	--bs-btn-font-weight: 600;
@@ -306,29 +312,26 @@ $utilities: (
 	--bs-btn-bg: var(--btn-bg);
 	--bs-btn-border-color: var(--bd-violet-bg);
 	--bs-btn-hover-color: var(--bs-white);
-	--bs-btn-hover-bg: rgb(118, 83, 234);
+	--bs-btn-hover-bg: #7051D9;
 	--bs-btn-hover-border-color: transparent;
 	--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
 	--bs-btn-active-color: var(--bs-btn-hover-color);
-	--bs-btn-active-bg: rgb(118, 83, 234);
+	--bs-btn-active-bg: #7759DB;
 	--bs-btn-active-border-color: transparent;
 	--bs-btn-border-radius: var(--border-radius-1);
 
-	transition: border-radius 0.2s ease-in-out;
+    transition: all .2s cubic-bezier(.2,0,0,1);
+	// transition: var( --transition-br-1);
+	// transition: opacity .2s cubic-bezier(.2,0,0,1);
+
+	&:hover {
+		// opacity: .08;
+	}
 
 	&:active {
-		// font-weight: 200 !important;
-		border-radius: 20px;
-		// --bs-btn-font-weight: 400;
-		// font-weight: 300 !important;
-		// font-family:'Google Symbols' !important;
-		font-variation-settings: "GRAD" 0, "wght" 18;
-		// padding: 0 15px;
-		// line-height: 32px !important;
-		letter-spacing: 0.3px !important;
-		// font-weight: 300 !important;
+		--bs-btn-border-radius: 16px;
+		font-variation-settings: "GRAD" -50;
 
-		// color: red !important;
 	}
 }
 
@@ -409,13 +412,40 @@ $utilities: (
 		color: inherit;
 	}
 
+	& .btn-menu__box {
+		position: relative;
+		overflow: hidden;
+		color: inherit;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: transparent;
+			z-index: -1;
+			border-radius: 100px;
+
+			opacity: 0;
+			transform: scaleX(.32);
+			transition-duration: .2s;
+			transition-property: transform, opacity;
+			transition-timing-function: linear;
+		}
+	}
+
 	&.active {
-		--bs-btn-active-color: var(--text-color-dark-3);
 
 		& .btn-menu__box{
-			background-color: var(--bg-color-menu-btn-active);
-			fill: var(--text-color-dark-3);
-			color: inherit;
+			&::after {
+				background: var(--bg-color-menu-btn-active);
+				opacity: 1;
+				transform: scaleX(1);
+			}
 		}
 
 		& .btn__icon{
@@ -427,8 +457,8 @@ $utilities: (
 		}
 	}
 
-
 	&:hover {
+
 		& .btn__text {
 			font-variation-settings: "GRAD" 50;
 		}
@@ -437,26 +467,8 @@ $utilities: (
 			font-variation-settings: "wght" 600, "opsz" 24;
 		}
 
-		.btn-menu__box {
-			position: relative;
-			overflow: hidden;
-			// background: var(--bg-color-linear-3);
-
-			&::after {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background: var(--bg-color-linear-3);
-
-			}
-			transition: background-color 0.1s ease-in-out;
-
-
+		& .btn-menu__box {
+			background: var(--bg-color-linear-3);
 		}
 
 		&.active {
@@ -472,7 +484,7 @@ $utilities: (
 
 	&:active {
 
-		& .btn-menu__box{
+		& .btn-menu__box {
 			background: var(--bg-color-menu-btn-active-2);
 		}
 
@@ -493,6 +505,7 @@ $utilities: (
 	align-items: center;
 	min-height: 48px;
 	padding: 2px 16px;
+	color: var(--text-color-dark-2);
 	--bs-btn-bg: transparent;
 	--bs-btn-font-weight: 500;
 	--bs-btn-color: var(--text-color-dark-2);
@@ -514,6 +527,16 @@ $utilities: (
 		text-transform: capitalize;
 	}
 
+	& .btn__icon {
+		// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
+		background-position: center;
+		color: inherit;
+	}
+
+	& .btn__text {
+		// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
+		color: inherit;
+	}
 
 	&:hover {
 		position: relative;
@@ -539,6 +562,16 @@ $utilities: (
 			font-variation-settings: "GRAD" 50;
 		}
 
+		&.active {
+			& .btn__text {
+				font-variation-settings: "GRAD" 125;
+			}
+
+			& .btn__icon {
+				font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
+			}
+		}
+
 	}
 
 	&.active {
@@ -562,162 +595,10 @@ $utilities: (
 
 
 
-	// & .btn__icon {
-	// 	// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
-	// 	background-position: center;
-	// 	color: inherit;
-	// }
-
-	// & .btn__text {
-	// 	// transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
-	// 	color: inherit;
-	// }
-
-	// &.active {
-	// 	--bs-btn-active-color: var(--text-color-dark-3);
-
-	// 	& .btn-menu__box{
-	// 		background-color: var(--bg-color-menu-btn-active);
-	// 		fill: var(--text-color-dark-3);
-	// 		color: inherit;
-	// 	}
-
-	// 	& .btn__icon{
-	// 		font-variation-settings: "FILL" 1, "wght" 400, "opsz" 24;
-	// 	}
-
-	// 	& .btn__text{
-	// 		font-variation-settings: "GRAD" 125;
-	// 	}
-	// }
-
-
-	// &:hover {
-	// 	& .btn__text {
-	// 		font-variation-settings: "GRAD" 50;
-	// 	}
-
-	// 	& .btn__icon {
-	// 		font-variation-settings: "wght" 600, "opsz" 24;
-	// 	}
-
-	// 	.btn-menu__box {
-	// 		position: relative;
-	// 		overflow: hidden;
-	// 		// background: var(--bg-color-linear-3);
-
-	// 		&::after {
-	// 			content: "";
-	// 			position: absolute;
-	// 			width: 100%;
-	// 			height: 100%;
-	// 			top: 0;
-	// 			bottom: 0;
-	// 			left: 0;
-	// 			right: 0;
-	// 			background: var(--bg-color-linear-3);
-
-	// 		}
-	// 		transition: background-color 0.1s ease-in-out;
-
-
-	// 	}
-
-	// 	&.active {
-	// 		& .btn__text {
-	// 			font-variation-settings: "GRAD" 125;
-	// 		}
-
-	// 		& .btn__icon {
-	// 			font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
-	// 		}
-	// 	}
-	// }
-
-	// &:active {
-
-	// 	& .btn-menu__box{
-	// 		background: var(--bg-color-menu-btn-active-2);
-	// 	}
-
-	// 	& .btn__icon {
-	// 		font-variation-settings: "wght" 300, "opsz" 24;
-	// 	}
-
-	// 	& .btn__text {
-	// 		font-variation-settings: "GRAD" -50;
-	// 	}
-	// }
-
-}
-
-.btn-menu-item {
-	position: relative;
-	overflow: hidden;
-	// --bs-btn-font-weight: 600;
-	--bs-btn-color: var(--text-color-dark-3);
-	--bs-btn-bg: var(--bs-secondary-rgb);
-	--bs-btn-border-color: transparent;
-	--bs-btn-hover-color: var(--text-color-dark-3);
-	--bs-btn-hover-bg: transparent;
-	--bs-btn-hover-border-color: transparent;
-	--bs-btn-focus-shadow-rgb: none;
-	--bs-btn-active-color: var(--text-color-dark-3);
-	--bs-btn-active-bg: transparent;
-	--bs-btn-active-border-color: transparent;
-	transition: font-weight 0.3s ease-in-out;
-	// border-radius: 48px !important;
-
-	&.active {
-		background-color: var(--bg-color-menu-btn-active);
-
-	}
-	&.active .btn-menu__name{
-		font-weight: 500 !important;
-		color: var(--text-color-dark-3);
-	}
-
-	&:active .btn-menu__box .btn-menu__icon {
-		// font-weight: 200 !important;
-		// border-radius: 20px;
-		// --bs-btn-font-weight: 400;
-		// font-weight: 300 !important;
-		// font-family:'Google Symbols' !important;
-		// font-variation-settings: "GRAD" 0, "wght" 18;
-		font-weight: 200;
-		font-style: normal;
-		font-variation-settings: 'FILL' 1 !important;
-
-		// font-variation-settings:
-		// 'FILL' 1,
-		// 'wght' 300,
-		// 'GRAD' 0,
-		// 'opsz' 16;
-		// padding: 0 15px;
-		// line-height: 32px !important;
-		// letter-spacing: 0.3px !important;
-
-	}
-
-	&:hover {
-			&::after {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background: rgba(0, 0, 0, 0.1);
-
-			}
-			transition: background-color 0.1s ease-in-out;
-
-	}
 
 
 }
+
 
 .btn-menu-round {
 	overflow: hidden;
@@ -857,22 +738,6 @@ $utilities: (
 		// background-color: var(--card-btn-hover-bg) !important;
 	}
 }
-
-// .accordion {
-// 	position: relative;
-// 	z-index: 3000;
-// }
-.btn-mode__container {
-	transition: transform 0.3s ease-in-out;
-}
-.btn-mode__fast {
-	transition: transform 0.05s ease-in-out;
-}
-.accordion-body {
-	background-color: transparent;
-	// color: white
-}
-
 .btn-mode {
 	overflow: hidden;
 	// --bs-btn-font-weight: 600;
@@ -900,6 +765,16 @@ $utilities: (
 
 		// &:not(:checked) + div {
 		// }
+	}
+	&.special input[type="checkbox"] {
+
+		&:checked + div {
+			transform: translateY(-44px);
+		}
+
+		&:not(:checked) + div {
+			transform: translateY(4px);
+		}
 	}
 
 	& .btn__icon {
@@ -978,9 +853,25 @@ $utilities: (
 
 
 }
+// .accordion {
+// 	position: relative;
+// 	z-index: 3000;
+// }
+.btn-mode__container {
+	transition: transform 0.3s ease-in-out;
+}
+.btn-mode__fast {
+	transition: transform 0.05s ease-in-out;
+}
+.accordion-body {
+	background-color: transparent;
+	// color: white
+}
+
+
 
 .accordion-button {
-	border-radius: 48px !important;
+	border-radius: var(--border-radius-1) !important;
 	overflow: hidden;
 }
 
@@ -1085,53 +976,57 @@ $utilities: (
 	.btn-menu {
 		--bs-btn-color: var(--text-color-light-2);
 		--bs-btn-hover-color: var(--text-color-light);
+		--bs-btn-active-color: var(--text-color-light);
 
-
-		// --text-color-light
-		&.active .btn-menu__box{
-			background-color: var(--dark-mode-bg-color-6);
-		}
 		&.active {
-			// background-color: var(--dark-mode-bg-color-6);
-			--bs-btn-hover-color: var(--text-color-light-3);
-		}
-		&:hover.active {
-			// background-color: var(--dark-mode-bg-color-6);
-			--bs-btn-hover-color: var(--text-color-light-3);
-		}
-		// &:hover.active .btn-menu__box{
-		// 	--bs-btn-hover-color: var(--text-color-light);
-		// }
+			--bs-btn-active-color: var(--text-color-light-3);
 
-		&:hover {
-			.btn-menu__box {
+			& .btn-menu__box{
 				&::after {
-					content: "";
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					background: var(--bg-color-linear-4);
-
+					background: var(--dark-mode-bg-color-6);
 				}
-
-				// & .btn-menu__icon {
-				// 	background-position: center;
-				// 	transition: transform 0.1s ease-in-out;
-				// 	// transform:scale(1.05);
-
-				// 	// animation-name: menuItemAnimation;
-				// 	// animation-duration: 5s;
-				// 		font-variation-settings: 'opsz' 17;
-				// 		// font-variation-settings: 'wght' 700;
-				// 		font-weight: 700;
-				// }
 			}
 		}
 
+		&:hover {
+
+			& .btn__text {
+				font-variation-settings: "GRAD" 50;
+			}
+
+			& .btn__icon {
+				font-variation-settings: "wght" 600, "opsz" 24;
+			}
+
+			& .btn-menu__box {
+				background: var(--bg-color-linear-3);
+			}
+
+			&.active {
+				& .btn__text {
+					font-variation-settings: "GRAD" 125;
+				}
+
+				& .btn__icon {
+					font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
+				}
+			}
+		}
+
+		&:active {
+
+			& .btn-menu__box {
+				background: var(--bg-color-menu-btn-active-2);
+			}
+
+			& .btn__icon {
+				font-variation-settings: "wght" 300, "opsz" 24;
+			}
+
+			& .btn__text {
+				font-variation-settings: "GRAD" -50;
+			}
+		}
 	}
 	.btn-menu-mobile {
 		--bs-btn-color: var(--text-color-light-2);

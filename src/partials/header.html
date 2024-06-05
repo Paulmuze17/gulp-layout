@@ -72,7 +72,7 @@
 			</div>
 			<div >
 
-				<label class="btn btn-mode w-48 h-48" for="btn-check-mode2">
+				<label class="btn btn-mode w-48 h-48 special" for="btn-check-mode2">
 					<input type="checkbox" class="btn-check" id="btn-check-mode2" autocomplete="off" onclick="toggleThemeMode()">
 					<div class="btn-mode__container">
 						<div class="btn-mode__light w-24 h-24 d-flex align-items-center justify-content-center mb-24">
@@ -383,7 +383,7 @@
 		<!-- top header -->
 		<div class="container-fluid p-0">
 			<div class="d-flex align-items-center">
-				<button class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<button id="btnMenuMobile" class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="btn__icon align-text-bottom google-symbols">menu</span>
 				</button>
 				<a class="btn btn-menu-round btn-menu-round-bright d-flex gap-16 align-items-center h-40" href="/">
@@ -513,27 +513,27 @@
 
 					</div> -->
 
-
+					<!-- collapse submenu -> develop -->
 					<div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3" id="collapseDevelopMenuMobile">
 
-						<a class="text-decoration-none btn btn-menu-mobile px-24" data-bs-toggle="collapse" href="#collapseDevelopMenuMobile" role="button" aria-expanded="false" aria-controls="collapseDevelopMenuMobile">
+						<a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseDevelopMenuMobile" role="button" aria-expanded="false" aria-controls="collapseDevelopMenuMobile">
 							<span class="d-block w-24 h-24">
-								<div class="arrow-back-icon google-symbols">arrow_back</div>
+								<div class="btn__icon arrow-back-icon google-symbols">arrow_back</div>
 							</span>
-							<div>Main menu</div>
+							<div class="btn__text">Main menu</div>
 						</a>
-						<ul class="list-unstyled w-100 px-10 ps-50">
+						<ul class="list-unstyled w-100 px-10 ps-42">
 
 							<li><a href="/" class="text-decoration-none btn btn-menu-mobile">Develop overview</a></li>
 							<li>
-								<ul class="list-unstyled accordion accordion-flush w-100 pe-8" id="accordionAndroid">
+								<ul class="list-unstyled accordion accordion-flush w-100 ps-1" id="accordionAndroid">
 
 									<li class="accordion-item w-100">
 										<h2 class="accordion-header">
-										<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview1" aria-expanded="false" aria-controls="flush-collapseDevelopOverview1">Android</button>
+											<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview1" aria-expanded="false" aria-controls="flush-collapseDevelopOverview1">Android</button>
 										</h2>
 										<div id="flush-collapseDevelopOverview1" class="accordion-collapse collapse">
-										<div class="accordion-body py-2 pe-0 px-12">
+										<div class="accordion-body py-2 pe-0 ps-11">
 											<ul class="list-unstyled w-100">
 												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">MDC-Android</a></li>
 												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Jetpack Compose</a></li>
@@ -541,53 +541,6 @@
 										</div>
 										</div>
 									</li>
-
-									<li class="accordion-item w-100">
-										<h2 class="accordion-header">
-										<button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview2" aria-expanded="false" aria-controls="flush-collapseDevelopOverview2">Motion</button>
-										</h2>
-										<div id="flush-collapseDevelopOverview2" class="accordion-collapse collapse">
-										<div class="accordion-body py-2 pe-0 px-12">
-											<ul class="list-unstyled w-100">
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
-												<li>
-													<ul class="list-unstyled accordion accordion-flush w-100" id="accordionAndroid2">
-														<li class="accordion-item w-100">
-															<h2 class="accordion-header">
-															<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">Android</button>
-															</h2>
-															<div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionAndroid2">
-															<div class="accordion-body py-2 pe-0 px-12">
-																<ul class="list-unstyled w-100">
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">MDC-Android</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Jetpack Compose</a></li>
-																</ul>
-															</div>
-															</div>
-														</li>
-
-														<li class="accordion-item w-100">
-															<h2 class="accordion-header">
-															<button class="accordion-button collapsed btn-menu-mobile w-100 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Motion</button>
-															</h2>
-															<div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionAndroid2">
-															<div class="accordion-body py-2 pe-0 px-12">
-																<ul class="list-unstyled w-100">
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Easing and duration</a></li>
-																	<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
-																</ul>
-															</div>
-															</div>
-														</li>
-													</ul>
-												</li>
-												<li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
-											</ul>
-										</div>
-										</div>
-									</li>
-
 
 								</ul>
 							</li>
