@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Material Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/assets/css/vendor.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script defer src="/assets/js/main.js"></script>
+</head>
+
+    <body>
+        <header class="position-relative h-100 z-1">
+    <!-- desktop menu -->
+    <nav class="position-relative overflow-auto d-none d-lg-block dark-mode-3">
+        <!-- left menu bar -->
+        <div id="desktopLeftMenuBar" class="position-fixed h-100 w-88 pt-18 pb-16 bg-gray-2 d-flex flex-column align-items-center justify-content-between gap-14 h-100 z-1046">
+            <div>
+                <div class="d-flex justify-content-center mb-24">
+                    <a class="btn btn-menu btn-focusable align-self-center text-decoration-none d-flex align-items-center justify-content-center w-56 h-56 bg-light-pink rounded-3" href="/search.html"><span class="google-symbols">search</span></a>
+                </div>
+
+                <ul class="list-unstyled d-flex flex-column align-items-center gap-12">
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center active" href="/" tabindex="0">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-21">
+                                <span class="btn__icon google-symbols">material_design</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-normal lh-16 text-center">Home</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32" >
+                            <span class="d-block w-24 h-24 fs-21">
+                                <span class="btn__icon google-symbols">apps</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center tracking-wider">Get started</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" data-menu-list="develop" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-22">
+                                <span class="btn__icon google-symbols">code</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center">Develop</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" data-menu-list="foundations" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-22">
+                                <span class="btn__icon google-symbols">book</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center">Foundations</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" data-menu-list="styles" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-22">
+                                <span class="btn__icon google-symbols">palette</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center">Styles</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" data-menu-list="components" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-22">
+                                <span class="btn__icon google-symbols">add_circle</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center">Components</span>
+                    </a></li>
+                    <li><a class="btn btn-menu btn-focusable-border text-decoration-none p-0 w-80 min-h-60 d-flex flex-column align-items-center" href="/" tabindex="-1">
+                        <span class="btn-menu__box d-flex align-items-center justify-content-center w-56 rounded-pill mb-4 h-32">
+                            <span class="d-block w-24 h-24 fs-22">
+                                <span class="btn__icon google-symbols">pages</span>
+                            </span>
+                        </span>
+                        <span class="btn__text d-block fs-12 fw-medium lh-16 text-center">Blog</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div >
+                <label class="btn btn-mode btn-focusable w-48 h-48 special" for="btn-check-mode2" tabindex="0">
+                    <input type="checkbox" class="btn-check" id="btn-check-mode2" onclick="toggleThemeMode()">
+                    <span class="btn-mode__container d-block">
+                        <span class="btn-mode__light w-24 h-24 d-flex align-items-center justify-content-center mb-24">
+                            <span class="btn__icon align-text-bottom google-symbols">dark_mode</span>
+                        </span>
+                        <span class="btn-mode__dark  w-24 h-24 d-flex align-items-center justify-content-center">
+                            <span class="btn__icon align-text-bottom google-symbols">light_mode</span>
+                        </span>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start bg-color3 ps-88 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" data-bs-backdrop="false" id="offcanvasNavbarDesktop">
+            <div class="offcanvas-body p-0 px-8 d-flex flex-column justify-content-between">
+                <div id="navMenuListContainer" class="position-relative h-100">
+
+                    <!-- DEVELOP -->
+                    <ul id="navMenuList-develop" class="list-unstyled w-100 pb-24">
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14 active">Develop overview</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAndroid" aria-expanded="false" aria-controls="flush-collapseAndroid">Android</button>
+                                    </h2>
+                                    <div id="flush-collapseAndroid" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">MDC-Android</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">Jetpack Compose</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Flutter</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Web</a></li>
+                    </ul>
+
+                    <!-- FOUNDATIONS -->
+                    <ul id="navMenuList-foundations" class="list-unstyled w-100 pb-24">
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">foundations overview</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAccessibility" aria-expanded="false" aria-controls="flush-collapseAccessibility">Accessibility</button>
+                                    </h2>
+                                    <div id="flush-collapseAccessibility" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">overview</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">designing</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">writing and text</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseContentDesign" aria-expanded="false" aria-controls="flush-collapseContentDesign">content design</button>
+                                    </h2>
+                                    <div id="flush-collapseContentDesign" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">overview</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">alt text</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">global writing</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">style guide</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">customizing material</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">design tokens</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseInteraction" aria-expanded="false" aria-controls="flush-collapseInteraction">interaction</button>
+                                    </h2>
+                                    <div id="flush-collapseInteraction" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">gestures</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">inputs</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">selection</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">states</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLayout" aria-expanded="false" aria-controls="flush-collapseLayout">layout</button>
+                                    </h2>
+                                    <div id="flush-collapseLayout" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">layout basics</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">applying layout</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">canoncial layouts</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">Material A-Z</a></li>
+                    </ul>
+
+                    <!-- STYLES -->
+                    <ul id="navMenuList-styles" class="list-unstyled w-100 pb-24">
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">styles overview</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseColor" aria-expanded="false" aria-controls="flush-collapseColor">color</button>
+                                    </h2>
+                                    <div id="flush-collapseColor" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">color system</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">color roles</a></li>
+                                                <li>
+                                                    <ul class="list-unstyled accordion accordion-flush w-100">
+                                                        <li class="accordion-item w-100">
+                                                            <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseColorSchemes" aria-expanded="false" aria-controls="flush-collapseColorSchemes">color schemes</button>
+                                                            </h2>
+                                                            <div id="flush-collapseColorSchemes" class="accordion-collapse collapse">
+                                                                <div class="accordion-body py-2 pe-0 px-12">
+                                                                    <ul class="list-unstyled w-100">
+                                                                        <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">choosing a scheme</a></li>
+                                                                        <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">static</a></li>
+                                                                        <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">dynamic</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">advanced</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">color resources</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">elevation</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">icons</a></li>
+
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMotion" aria-expanded="false" aria-controls="flush-collapseMotion">motion</button>
+                                    </h2>
+                                    <div id="flush-collapseMotion" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">overview</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">easing and duration</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">transitions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">shape</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">typography</a></li>
+
+                    </ul>
+
+                    <!-- COMPONENTS -->
+                    <ul id="navMenuList-components" class="list-unstyled w-100 pb-24">
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">components overview</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAppBar" aria-expanded="false" aria-controls="flush-collapseAppBar">app bar</button>
+                                    </h2>
+                                    <div id="flush-collapseAppBar" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">bottom app bar</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">top app bar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">badges</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseButtons" aria-expanded="false" aria-controls="flush-collapseButtons">buttons</button>
+                                    </h2>
+                                    <div id="flush-collapseButtons" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">all buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">common buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">FAB</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">extended fab</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">icon buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">segmented buttons</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">cards</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">carousel</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">checkbox</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">chips</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">date picker</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">dialogs</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">divider</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">lists</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">menus</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNavigataion" aria-expanded="false" aria-controls="flush-collapseNavigataion">navigation</button>
+                                    </h2>
+                                    <div id="flush-collapseNavigataion" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">navigation bar</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">navigation drawer</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">navigation rail</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">progress indicators</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">radio button</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">search</a></li>
+                        <li>
+                            <ul class="list-unstyled accordion accordion-flush w-100">
+                                <li class="accordion-item w-100">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed w-100 btn btn-menu-mobile shadow-none fs-14" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSheets" aria-expanded="false" aria-controls="flush-collapseSheets">sheets</button>
+                                    </h2>
+                                    <div id="flush-collapseSheets" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 px-12">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">bottom sheets</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile fs-14">side sheets</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">sliders</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">snackbar</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">switch</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">tabs</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">text fields</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">time pickers</a></li>
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile fs-14">tooltips</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <nav class="d-block d-lg-none navbar fixed-top h-100 bg-white h-64 z-1 px-4 py-4 px-md-12 py-md-8 dark-mode-4" id="collapseDevelop">
+        <!-- top header -->
+        <div class="container-fluid p-0">
+            <div class="d-flex align-items-center">
+                <button id="btnMenuMobile" class="btn btn-menu-round w-48 h-48" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarMobileMenu" aria-controls="offcanvasNavbarMobileMenu" aria-label="Toggle navigation">
+                    <span class="btn__icon align-text-bottom google-symbols">menu</span>
+                </button>
+                <a class="btn btn-menu-round btn-menu-round-bright d-flex gap-16 align-items-center h-40" href="/">
+                    <div class="h-22 w-22">
+                        <span class="btn__icon google-symbols fs-22">material_design</span>
+                    </div>
+                    <div class="btn__text d-none d-md-block fs-16 fw-medium">Material Design 3</div>
+                </a>
+            </div>
+
+            <div>
+                <button class="btn btn-menu-round w-48 h-48 d-flex align-items-center" type="button"><span class="btn__icon google-symbols">search</span></button>
+            </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start bg-color3 pt-8 w-320 rounded-end-3 dark-mode-3" tabindex="-1" id="offcanvasNavbarMobileMenu">
+            <div class="offcanvas-header p-0 px-12">
+                <!-- <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+					<span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+				</button> -->
+            </div>
+            <div class="offcanvas-body p-0  d-flex flex-column justify-content-between">
+                <div class="position-relative h-100">
+                    <ul class="list-unstyled px-8">
+                        <li>
+                            <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+                            </button>
+                        </li>
+
+                        <li><a href="/" class="text-decoration-none btn btn-menu-mobile active">
+                            <span class="d-block w-24 h-24">
+                                <span class="btn__icon google-symbols">material_design</span>
+                            </span>
+                            <span class="btn__text">Home</span>
+                        </a></li>
+                        <li>
+                            <a href="/" class="text-decoration-none btn btn-menu-mobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">apps</span>
+                                </span>
+                                <span class="btn__text">Get started</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseDevelopMenuMobile" role="button" aria-expanded="false" aria-controls="collapseDevelopMenuMobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">code</span>
+                                </span>
+                                <span class="btn__text">Develop</span>
+                                <span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseFoundationsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseFoundationsMenuMobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">book</span>
+                                </span>
+                                <span class="btn__text">Foundations</span>
+                                <span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseStylesMenuMobile" role="button" aria-expanded="false" aria-controls="collapseStylesMenuMobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">palette</span>
+                                </span>
+                                <span class="btn__text">Styles</span>
+                                <span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none btn btn-menu-mobile" data-bs-toggle="collapse" href="#collapseComponentsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseComponentsMenuMobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">add_circle</span>
+                                </span>
+                                <span class="btn__text">Components</span>
+                                <span class="btn__icon arrow-right-icon google-symbols ms-auto">arrow_forward</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-decoration-none btn btn-menu-mobile">
+                                <span class="d-block w-24 h-24">
+                                    <span class="btn__icon google-symbols">pages</span>
+                                </span>
+                                <span class="btn__text">Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- collapse submenu -> develop -->
+                    <div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3 px-8" id="collapseDevelopMenuMobile">
+                        <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+                        </button>
+                        <a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseDevelopMenuMobile" role="button" aria-expanded="false" aria-controls="collapseDevelopMenuMobile">
+                            <span class="d-block w-24 h-24">
+                                <span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
+                            </span>
+                            <span class="btn__text">Main menu</span>
+                        </a>
+                        <ul class="list-unstyled w-100 px-10 ps-42">
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Develop overview</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDevelopOverview1" aria-expanded="false" aria-controls="flush-collapseDevelopOverview1">Android</button>
+                                        </h2>
+                                        <div id="flush-collapseDevelopOverview1" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">MDC-Android</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Jetpack Compose</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Flutter</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Web</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- collapse submenu -> foundations -->
+                    <div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3 px-8" id="collapseFoundationsMenuMobile">
+                        <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+                        </button>
+                        <a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseFoundationsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseFoundationsMenuMobile">
+                            <span class="d-block w-24 h-24">
+                                <span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
+                            </span>
+                            <div class="btn__text">Main menu</div>
+                        </a>
+                        <ul class="list-unstyled w-100 px-10 ps-42">
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Foundations overview</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFoundationsAccessibility" aria-expanded="false" aria-controls="flush-collapseFoundationsAccessibility">Accessibility</button>
+                                        </h2>
+                                        <div id="flush-collapseFoundationsAccessibility" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Designing</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Writing and text</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFoundationsContentDesign" aria-expanded="false" aria-controls="flush-collapseFoundationsContentDesign">Content design</button>
+                                        </h2>
+                                        <div id="flush-collapseFoundationsContentDesign" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Alt text</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Global writing</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Style guide</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Customizing Material</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Design tokens</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFoundationsInteraction" aria-expanded="false" aria-controls="flush-collapseFoundationsInteraction">Interaction</button>
+                                        </h2>
+                                        <div id="flush-collapseFoundationsInteraction" class="accordion-collapse collapse">
+                                            <div class="accordion-body py-2 pe-0 ps-11">
+                                                <ul class="list-unstyled w-100">
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Gestures</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Inputs</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Selection</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">States</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFoundationsLayout" aria-expanded="false" aria-controls="flush-collapseFoundationsLayout">Layout</button>
+                                        </h2>
+                                        <div id="flush-collapseFoundationsLayout" class="accordion-collapse collapse">
+                                            <div class="accordion-body py-2 pe-0 ps-11">
+                                                <ul class="list-unstyled w-100">
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Layout basics</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Applying layout</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Canoncial layouts</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Material A-Z</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- collapse submenu -> styles -->
+                    <div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3 px-8" id="collapseStylesMenuMobile">
+                        <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+                        </button>
+                        <a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseStylesMenuMobile" role="button" aria-expanded="false" aria-controls="collapseStylesMenuMobile">
+                            <span class="d-block w-24 h-24">
+                                <span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
+                            </span>
+                            <div class="btn__text">Main menu</div>
+                        </a>
+                        <ul class="list-unstyled w-100 px-10 ps-42">
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Styles overview</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesColor" aria-expanded="false" aria-controls="flush-collapseStylesColor">Color</button>
+                                        </h2>
+                                        <div id="flush-collapseStylesColor" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color system</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color roles</a></li>
+                                                <li>
+                                                    <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                                        <li class="accordion-item w-100">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesColorSchemes" aria-expanded="false" aria-controls="flush-collapseStylesColorSchemes">Color schemes</button>
+                                                            </h2>
+                                                            <div id="flush-collapseStylesColorSchemes" class="accordion-collapse collapse">
+                                                            <div class="accordion-body py-2 pe-0 ps-11">
+                                                                <ul class="list-unstyled w-100">
+                                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Choosing a scheme</a></li>
+                                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color roles</a></li>
+                                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Static</a></li>
+                                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Dynamic</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Advanced</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Color resources</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Elevation</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Icons</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseStylesMotion" aria-expanded="false" aria-controls="flush-collapseStylesMotion">Motion</button>
+                                        </h2>
+                                        <div id="flush-collapseStylesMotion" class="accordion-collapse collapse">
+                                            <div class="accordion-body py-2 pe-0 ps-11">
+                                                <ul class="list-unstyled w-100">
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Overview</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Easing and duration</a></li>
+                                                    <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Transitions</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Shape</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Typography</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- collapse submenu -> components -->
+                    <div class="collapse-wrapper collapse collapse-horizontal position-absolute bg-color3 overflow-auto top-0 bottom-0 start-0 end-0 w-100 dark-mode-3 px-8" id="collapseComponentsMenuMobile">
+                        <button type="button" class="btn btn-menu-round m-0 p-0 mb-8 ms-4 h-48 w-48 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="btn__icon google-symbols btn-icon ng-star-inserted">menu_open</span>
+                        </button>
+                        <a class="text-decoration-none btn btn-menu-mobile px-16" data-bs-toggle="collapse" href="#collapseComponentsMenuMobile" role="button" aria-expanded="false" aria-controls="collapseComponentsMenuMobile">
+                            <span class="d-block w-24 h-24">
+                                <span class="btn__icon arrow-back-icon google-symbols">arrow_back</span>
+                            </span>
+                            <div class="btn__text">Main menu</div>
+                        </a>
+                        <ul class="list-unstyled w-100 px-10 ps-42">
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Components overview</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsAppbars" aria-expanded="false" aria-controls="flush-collapseComponentsAppbars">App bars</button>
+                                        </h2>
+                                        <div id="flush-collapseComponentsAppbars" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Bottom app bar</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Top app bar</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Badges</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsButtons" aria-expanded="false" aria-controls="flush-collapseComponentsButtons">Buttons</button>
+                                        </h2>
+                                        <div id="flush-collapseComponentsButtons" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">All buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Common buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">FAB</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Extended fab</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Icon buttons</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Segmented buttons</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Cards</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Carousel</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Checkbox</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Chips</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Date pickers</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Dialogs</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Divider</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Lists</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Menus</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsNavigation" aria-expanded="false" aria-controls="flush-collapseComponentsNavigation">Navigation</button>
+                                        </h2>
+                                        <div id="flush-collapseComponentsNavigation" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Navigation bar</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Navigation drawer</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Navigation rail</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Progress indicators</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Radio button</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Search</a></li>
+                            <li>
+                                <ul class="list-unstyled accordion accordion-flush w-100 ps-1">
+                                    <li class="accordion-item w-100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed w-100 btn-menu-mobile shadow-none pe-19" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComponentsSheets" aria-expanded="false" aria-controls="flush-collapseComponentsSheets">Sheets</button>
+                                        </h2>
+                                        <div id="flush-collapseComponentsSheets" class="accordion-collapse collapse">
+                                        <div class="accordion-body py-2 pe-0 ps-11">
+                                            <ul class="list-unstyled w-100">
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Bottom sheets</a></li>
+                                                <li><a href="#" class="text-decoration-none btn btn-menu-mobile">Side sheets</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Sliders</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Snackbar</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Switch</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Tabs</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Text fields</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Time pickers</a></li>
+                            <li><a href="/" class="text-decoration-none btn btn-menu-mobile">Tooltips</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MODE SWITCHER -->
+                <div class="d-flex align-items-center justify-content-center h-84 z-3">
+                    <label class="btn btn-mode h-48 px-16 py-12" for="btn-check-mode1">
+                        <input type="checkbox" class="btn-check" id="btn-check-mode1" onclick="toggleThemeMode()">
+                        <span class="d-block btn-mode__container btn-mode__fast">
+                            <span class="btn-mode__light d-flex align-items-center justify-content-center mb-24">
+                                <span class="btn__icon align-text-bottom google-symbols me-8">dark_mode</span>
+                                <span class="fs-16 font-google-text"> Switch to dark mode </span>
+                            </span>
+                            <span class="btn-mode__dark d-flex align-items-center justify-content-center">
+                                <span class="btn__icon align-text-bottom google-symbols me-8">light_mode</span>
+                                <span class="fs-16 font-google-text"> Switch to light mode </span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <div class="ps-0 ps-lg-88 pt-64 pt-lg-0">
+            <div class="container-xxl gx-0 px-0 px-sm-8 px-3xl-0">
+                <main class="pt-8">
+                    <section class="row row-cols-1 row-cols-xl-2 mb-96 g-8">
+                        <div class="col">
+                            <div class="dark-mode-2 min-h-unset min-h-xl-544 bg-сolor1 rounded-4 p-32 p-md-56 d-flex flex-column justify-content-center h-100">
+                                <div class="pt-0 pt-xl-1px">
+                                    <h1 class="fw-medium fs-45 fs-md-88 fs-xl-96 lh-52 lh-md-96 lh-xl-one mb-8">Material Design</h1>
+                                    <p class="font-google-text fs-16 fs-md-22 lh-24 lh-md-30 mb-24">Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable products with Material 3.</p>
+                                </div>
+                                <div class="pb-0 pb-xl-1px ms-1">
+                                    <a class="text-decoration-none d-flex align-items-center w-fit-content btn btn-get btn-outline-none btn-focusable text-center fw-475 lh-32 px-48 py-2 h-80 fs-24" style="letter-spacing: normal;" href="/get-started.html">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="h-100 rounded-3 overflow-hidden position-relative">
+                                <figure class="hero__video-wrapper h-100 z-n1" >
+                                    <video id="heroVideo" class="hero__video img-fluid object-fit-cover h-100" src="/videos/hero-1.mp4" poster="/assets/images/videos/hero-1-preview.png" tabindex="0" preload="auto" autoplay loop ></video>
+                                </figure>
+
+                                <button id="pausePlayVideoBtn" class="btn btn-video btn-focusable rounded-pill h-40 w-40 position-absolute bottom-0 end-0 d-flex align-items-center justify-content-center mb-4 me-4" aria-label="Pause Video">
+                                    <span class="google-symbols fs-20">pause</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <div class="mw-1200 mx-auto">
+                        <section class="mb-80 mb-xl-96">
+                            <h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">News &amp; launches</h2>
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100 " style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-8.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">Material Design at Google I/O</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">See the full list of Material talks and tutorials launching at I/O 2024</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-4.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">How to get Google Fonts</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">New API updates and website upgrades make font integration easier than ever</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-6.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 fw-medium text-black-2 mb-8">Figma design kit</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Start designing and prototyping with the complete M3 library of ready-made components</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-80 mb-xl-96">
+                            <h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Design system updates</h2>
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-8">
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-9.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">Content design</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Guidance and best practices for UX writing and information design</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-1.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">New component: Carousel</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">An expressive new way to display a horizontally scrolling collection of content</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-3.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 text-black-2 mb-8">M3 for Jetpack Compose</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-7.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">Material Theme Builder</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Easily migrate or get started with the M3 color system and dynamic color</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-2.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">How the color system works</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">From color roles and accessible tone pairs to dynamic color, learn how color works in Material</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none h-100 overflow-hidden btn btn-card text-start w-100 p-0" href="#">
+                                        <div class="overgflow-hidden rounded-4 h-200 w-100 h-100" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('/assets/images/card-previews/card-bg-5.png');"></div>
+                                        <div class="p-24">
+                                            <h3 class="btn-card__title fs-24 lh-32 mb-8 text-black-2">Using Material icons</h3>
+                                            <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Learn how to use and customize the latest system icons for your UI</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-120">
+                            <h2 class="fs-36 fs-md-45 fs-xl-57 lh-44 lh-md-52 lh-xl-64 ps-24 mb-20 mb-xl-24">Resources</h2>
+                            <div class="row row-cols-1 row-cols-lg-2 g-8">
+                                <div class="col">
+                                    <a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+                                        <h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Material blog</h3>
+                                        <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal m-0 text-black-2">News, tutorials, and inspiration from the Material team</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+                                        <h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Figma design kit</h3>
+                                        <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Customizable styles and components to help you design with Material 3</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+                                        <h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Get started</h3>
+                                        <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Guides, videos, and tools to start building with Material</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="text-decoration-none overflow-hidden h-100 w-100 overflow-hidden btn btn-card text-start text-dark p-24" href="#">
+                                        <h3 class="btn-card__title fs-24 lh-32 fw-475 text-black-2">Develop</h3>
+                                        <p class="font-google-text fs-14 fs-md-16 lh-20 lh-md-24 fw-normal text-black-2 m-0">Code and developer documentation for building with Material</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+                <div class="px-8">
+    <div class="h-8 position-relative w-100">
+        <svg class="footer__line position-absolute top-0" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="a" width="91" height="8" patternUnits="userSpaceOnUse"><g clip-path="url(#clip0_2426_11367)"><path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="#E1E3E1" stroke-linecap="square" style="stroke: var(--footer-line);"></path></g></pattern><rect width="100%" height="100%" fill="url(#a)"></rect></svg>
+
+    </div>
+    <footer class="mw-1280 mx-auto px-24 px-md-32 px-lg-40 py-64">
+        <div class="mw-1200 mx-auto">
+            <div class="grid g-0 mb-64 mw-1200 justify-conent-between grid-footer" style="row-gap: 24px; --bs-gap: 20px; --bs-columns: 6;">
+                <div class="g-col-3 g-col-lg-1">
+                    <div class="pb-16" >
+                        <div class="mb-24">
+                            <a class="text-decoration-none link-focusable p-1 btn btn-menu-underline h-42 w-42 ops d-flex align-items-center justify-content-center" href="/" >
+                                <span class="google-symbols fs-40 text-black-2 w-40 h-40">material_design</span>
+                            </a>
+                        </div>
+
+                        <p class="font-google-text fw-normal fs-14 fs-md-16 lh-20 lh-md-24 pe-0 pe-lg-64 mb-0">Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material Design streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.</p>
+                    </div>
+
+                </div>
+                <div class="g-col g-col-lg-1">
+                    <div class="pt-0 pt-lg-24 h-100" >
+                        <h3 class="fw-medium fs-14 lh-20 text-gray-600 mb-24 mb-md-20">Social</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-24 gap-md-20 m-0">
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">GitHub</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Twitter</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">YouTube</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Blog RSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-col g-col-lg-1">
+                    <div class="pt-0 pt-lg-24 h-100" >
+
+                        <h3 class="fw-medium fs-14 lh-20 text-gray-600 mb-24 mb-md-20">Libraries</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-24 gap-md-20 m-0">
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Android</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Compose</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Flutter</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Web</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-col g-col-lg-1">
+                    <div class="pt-0 pt-lg-24 h-100">
+
+                        <h3 class="fw-medium fs-14 lh-20 text-gray-600 mb-24 mb-md-20">Archived versions</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-24 gap-md-20 m-0">
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Material Design 1</a></li>
+                            <li class="p-1"><a class="link-underline-hover link-focusable fs-16 fw-medium lh-24 text-purple" href="#">Material Design 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div >
+            <ul class="list-unstyled d-flex column-gap-24 row-gap-16 m-0 py-1 flex-wrap align-items-center" style="fill: #1c1b1d;">
+                <li class="pe-8">
+                    <a class="p-1 text-black" href="https://www.google.com" rel="noopener" target="_blank" aria-label="Google"><svg width="71" height="23" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.773C0 3.937 4.083 0 8.938 0c2.684 0 4.595 1.047 6.034 2.415l-1.695 1.693c-1.032-.962-2.429-1.712-4.339-1.712-3.545 0-6.317 2.847-6.317 6.377s2.772 6.381 6.317 6.381c2.297 0 3.607-.921 4.446-1.756.687-.686 1.137-1.67 1.307-3.02H8.938V7.982h8.097c.085.43.129.946.129 1.5 0 1.797-.494 4.025-2.084 5.608-1.547 1.603-3.524 2.462-6.142 2.462C4.083 17.55 0 13.61 0 8.773zm23.693 6.303c-1.719 0-3.198-1.413-3.198-3.425 0-2.032 1.479-3.423 3.198-3.423 1.718 0 3.201 1.391 3.201 3.423 0 2.012-1.483 3.425-3.201 3.425m0-9.076C20.557 6 18 8.375 18 11.65c0 3.257 2.557 5.652 5.693 5.652 3.137 0 5.692-2.395 5.692-5.651C29.385 8.375 26.83 6 23.693 6m13.003 9.076c-1.719 0-3.2-1.413-3.2-3.425 0-2.032 1.481-3.423 3.2-3.423 1.718 0 3.2 1.391 3.2 3.423 0 2.012-1.482 3.425-3.2 3.425m0-9.076C33.559 6 31 8.375 31 11.65c0 3.257 2.559 5.652 5.696 5.652 3.135 0 5.692-2.395 5.692-5.651C42.388 8.375 39.831 6 36.696 6m11.952 9.076c-1.716 0-3.156-1.432-3.156-3.403 0-1.991 1.44-3.445 3.156-3.445 1.697 0 3.031 1.454 3.031 3.445 0 1.971-1.334 3.403-3.031 3.403zm2.858-8.732v.918h-.085C50.861 6.601 49.789 6 48.434 6 45.6 6 43 8.485 43 11.673c0 3.168 2.6 5.63 5.434 5.63 1.355 0 2.427-.6 2.987-1.287h.085v.816c0 2.162-1.161 3.316-3.028 3.316-1.526 0-2.471-1.092-2.857-2.01l-2.171.9c.624 1.498 2.278 3.336 5.028 3.336 2.922 0 5.391-1.713 5.391-5.885V6.344h-2.363zM56 16.608h2.49V0H56zm9.434-8.425c.987 0 1.825.494 2.104 1.199l-5.069 2.096c-.065-2.182 1.697-3.295 2.965-3.295m.192 6.891c-1.267 0-2.169-.578-2.748-1.71l7.582-3.125-.259-.643C69.729 8.333 68.29 6 65.347 6 62.427 6 60 8.292 60 11.65c0 3.167 2.404 5.65 5.626 5.65 2.599 0 4.103-1.583 4.727-2.504l-1.934-1.284c-.643.942-1.525 1.562-2.793 1.562" fill-rule="evenodd"></path></svg></a>
+                </li>
+                <li><a class="link-underline-hover font-google-text text-nowrap text-black-2 fs-16 fw-medium lh-24 opz" href="#">Privacy Policy</a></li>
+                <li><a class="link-underline-hover font-google-text text-nowrap text-black-2 fs-16 fw-medium lh-24 opz" href="#">Terms of Service</a></li>
+                <li><a class="link-underline-hover font-google-text text-nowrap text-black-2 fs-16 fw-medium lh-24 opz" href="#">Join research studies</a></li>
+                <li><a class="link-underline-hover font-google-text text-nowrap text-black-2 fs-16 fw-medium lh-24 opz" href="#">Feedback</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+        <script>
+			function toggleThemeMode() {
+				const rootTag = document.documentElement;
+				// console.log(rootTag)
+				rootTag.dataset.bsTheme = rootTag.dataset.bsTheme == "dark" ? "light" : "dark" ;
+			}
+
+			// btnMenuMobile toggle icon TODO
+
+			const checkbox1 = document.querySelector('#btn-check-mode1');
+			const checkbox2 = document.querySelector('#btn-check-mode2');
+
+			checkbox1.addEventListener('change', () => {
+				checkbox2.checked = checkbox1.checked;
+			});
+			checkbox2.addEventListener('change', () => {
+				checkbox1.checked = checkbox2.checked;
+			});
+
+			// desktop navmenu logic
+			document.addEventListener("DOMContentLoaded", ()=>{
+				const pausePlayVideoBtn = document.querySelector("#pausePlayVideoBtn");
+				const heroVideo = document.querySelector("#heroVideo");
+				const iconVideo = pausePlayVideoBtn.querySelector("span");
+
+				if(pausePlayVideoBtn) {
+					pausePlayVideoBtn.addEventListener("click", (event)=>{
+
+						if(heroVideo) {
+							if (heroVideo.paused) {
+								heroVideo.play();
+								if(iconVideo) {
+									iconVideo.innerText = "pause";
+									iconVideo.ariaLabel = "Pause Video";
+								}
+								pausePlayVideoBtn.classList.remove("active");
+							}
+							else {
+								heroVideo.pause();
+
+								if(iconVideo) {
+									iconVideo.innerText = "play_arrow";
+									iconVideo.ariaLabel = "Play Video";
+								}
+
+								pausePlayVideoBtn.classList.add("active");
+							}
+						}
+					});
+				}
+
+				let sideMenuPinned = false;
+				const desktopLeftMenuBar = document.querySelector("#desktopLeftMenuBar");
+				const menuBtns = document.querySelectorAll(".btn-menu");
+				const offcanvasSideDesktopMenu = document.querySelector("#offcanvasNavbarDesktop");
+				const bsOffcanvas = new bootstrap.Offcanvas("#offcanvasNavbarDesktop");
+				let isOffcanvasOpen = false;
+
+				offcanvasSideDesktopMenu.addEventListener("mouseover", (event)=>{
+					if(!isOffcanvasOpen) {
+						bsOffcanvas.show();
+						desktopLeftMenuBar.classList.add("border-end");
+						isOffcanvasOpen = true;
+					}
+				});
+
+				offcanvasSideDesktopMenu.addEventListener("mouseout", (event)=>{
+					if(isOffcanvasOpen) {
+						bsOffcanvas.hide();
+						desktopLeftMenuBar.classList.remove("border-end");
+						isOffcanvasOpen = false;
+					}
+				});
+
+				menuBtns.forEach((element, key)=>{
+					element.addEventListener("mouseover", (event)=>{
+						console.log(123)
+						if(offcanvasSideDesktopMenu) {
+
+							if(element.dataset.menuList ) {
+								const datasetMenuListName = element.dataset.menuList;
+								const menuListElement = document.querySelector(`#navMenuList-${datasetMenuListName}`);
+								const navMenuListContainer = document.querySelector("#navMenuListContainer");
+
+								if(menuListElement) {
+
+
+									for (const child of navMenuListContainer.children) {
+										child.style.display = "none";
+									}
+									menuListElement.style.display = "";
+
+									if(!isOffcanvasOpen) {
+										bsOffcanvas.show();
+										isOffcanvasOpen = true;
+									}
+
+									desktopLeftMenuBar.classList.add("border-end");
+
+								} else {
+									if(isOffcanvasOpen) {
+										bsOffcanvas.hide();
+										isOffcanvasOpen = false;
+									}
+
+									desktopLeftMenuBar.classList.remove("border-end");
+								}
+							} else {
+								if(isOffcanvasOpen) {
+									bsOffcanvas.hide();
+									isOffcanvasOpen = false;
+								}
+
+								desktopLeftMenuBar.classList.remove("border-end");
+							}
+						}
+					});
+				})
+			})
+		</script>
+    </body>
+</html>

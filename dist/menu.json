@@ -1,0 +1,460 @@
+{
+	"develop": {
+		"name": "Develop overview",
+		"link": "none",
+		"items": {
+			"android": {
+				"name": "android",
+				"link": "none",
+				"items": [
+					{
+						"name": "MDC-Android",
+						"link": "/"
+					},
+					{
+						"name": "Jetpack Compose",
+						"link": "/"
+					}
+				]
+			},
+			"flutter": {
+				"name": "flutter",
+				"link": "/",
+				"items": []
+			},
+			"web": {
+				"name": "web",
+				"link": "/",
+				"items": []
+			}
+		}
+	},
+
+	"foundations": {
+		"name": "foundations",
+		"link": "none",
+		"items": {
+			"foundations_overview": {
+				"name": "foundations overview",
+				"link": "/",
+				"items": []
+			},
+
+			"accessibility": {
+				"name": "accessibility",
+				"link": "none",
+				"items": [
+					{
+						"name": "overview",
+						"link": "/"
+					},
+					{
+						"name": "designing",
+						"link": "/"
+					},
+					{
+						"name": "writing and text",
+						"link": "/"
+					}
+				]
+			},
+
+			"content_design": {
+				"name": "content design",
+				"link": "none",
+				"items": [
+					{
+						"name": "overview",
+						"link": "/"
+					},
+					{
+						"name": "alt text",
+						"link": "/"
+					},
+					{
+						"name": "global writing",
+						"link": "/"
+					},
+					{
+						"name": "style guide",
+						"link": "/"
+					}
+				]
+			},
+
+			"customizing_material": {
+				"name": "customizing material",
+				"link": "/",
+				"items": []
+			},
+
+			"design_tokens": {
+				"name": "design tokens",
+				"link": "/",
+				"items": []
+			},
+
+			"interaction": {
+				"name": "interaction",
+				"link": "",
+				"items": [
+					{
+						"name": "gestures",
+						"link": "/"
+					},
+					{
+						"name": "inputs",
+						"link": "/"
+					},
+					{
+						"name": "selection",
+						"link": "/"
+					},
+					{
+						"name": "states",
+						"link": "/"
+					}
+				]
+			},
+
+			"layout": {
+				"name": "layout",
+				"link": "",
+				"items": [
+					{
+						"name": "layout basics",
+						"link": "/"
+					},
+					{
+						"name": "applying layout",
+						"link": "/"
+					},
+					{
+						"name": "canoncial layouts",
+						"link": "/"
+					}
+				]
+			},
+
+			"material_a_z": {
+				"name": "Material A-Z",
+				"link": "/",
+				"items": []
+			}
+
+
+		}
+	},
+
+	"styles": {
+		"name": "styles",
+		"link": "none",
+		"items": {
+			"styles_overview": {
+				"name": "styles overview",
+				"link": "/",
+				"items": []
+			},
+
+			"color": {
+				"name": "color",
+				"link": "none",
+				"items": [
+					{
+						"name": "color system",
+						"link": "/"
+					},
+					{
+						"name": "color roles",
+						"link": "/"
+					},
+					{
+						"name": "color schemes",
+						"link": "",
+						"items": [
+							{
+								"name": "choosing a scheme",
+								"link": "/"
+							},
+							{
+								"name": "static",
+								"link": "/"
+							},
+							{
+								"name": "dynamic",
+								"link": "/"
+							}
+						]
+					},
+					{
+						"name": "advanced",
+						"link": "/"
+					},
+					{
+						"name": "color resources",
+						"link": "/"
+					}
+				]
+			},
+
+			"elevation": {
+				"name": "elevation",
+				"link": "/",
+				"items": []
+			},
+
+			"icons": {
+				"name": "icons",
+				"link": "/",
+				"items": []
+			},
+
+			"motion": {
+				"name": "motion",
+				"link": "/",
+				"items": [
+					{
+						"name": "overview",
+						"link": "/"
+					},
+					{
+						"name": "easing and duration",
+						"link": "/"
+					},
+					{
+						"name": "transitions",
+						"link": "/"
+					}
+				]
+			},
+			"shape": {
+				"name": "shape",
+				"link": "/",
+				"items": []
+			},
+			"typography": {
+				"name": "typography",
+				"link": "/",
+				"items": []
+			}
+		}
+	},
+
+	"components": {
+		"name": "components",
+		"link": "none",
+		"items": {
+			"components_overview": {
+				"name": "components overview",
+				"link": "/",
+				"items": []
+			},
+
+			"app_bars": {
+				"name": "app bars",
+				"link": "none",
+				"items": [
+					{
+						"name": "bottom app bar",
+						"link": "/"
+					},
+					{
+						"name": "top app bar",
+						"link": "/"
+					}
+				]
+			},
+
+			"badges": {
+				"name": "badges",
+				"link": "/",
+				"items": []
+			},
+
+			"buttons": {
+				"name": "buttons",
+				"link": "/",
+				"items": [
+					{
+						"name": "all buttons",
+						"link": "/"
+					},
+					{
+						"name": "common buttons",
+						"link": "/"
+					},
+					{
+						"name": "FAB",
+						"link": "/"
+					},
+					{
+						"name": "extended fab",
+						"link": "/"
+					},
+					{
+						"name": "icon buttons",
+						"link": "/"
+					},
+					{
+						"name": "segmented buttons",
+						"link": "/"
+					}
+				]
+			},
+
+			"cards": {
+				"name": "cards",
+				"link": "/",
+				"items": []
+			},
+
+			"carousel": {
+				"name": "carousel",
+				"link": "/",
+				"items": []
+			},
+
+			"checkbox": {
+				"name": "checkbox",
+				"link": "/",
+				"items": []
+			},
+
+			"chips": {
+				"name": "chips",
+				"link": "/",
+				"items": []
+			},
+
+			"date_picker": {
+				"name": "date picker",
+				"link": "/",
+				"items": []
+			},
+
+			"dialogs": {
+				"name": "dialogs",
+				"link": "/",
+				"items": []
+			},
+
+			"divider": {
+				"name": "divider",
+				"link": "/",
+				"items": []
+			},
+
+			"lists": {
+				"name": "lists",
+				"link": "/",
+				"items": []
+			},
+
+			"menus": {
+				"name": "menus",
+				"link": "/",
+				"items": []
+			},
+
+			"navigation": {
+				"name": "navigation",
+				"link": "/",
+				"items": [
+					{
+						"name": "navigation bar",
+						"link": "/"
+					},
+					{
+						"name": "navigation drawer",
+						"link": "/"
+					},
+					{
+						"name": "navigation rail",
+						"link": "/"
+					}
+				]
+			},
+
+			"progress_indicators": {
+				"name": "progress indicators",
+				"link": "/",
+				"items": []
+			},
+
+			"radio_button": {
+				"name": "radio button",
+				"link": "/",
+				"items": []
+			},
+
+			"search": {
+				"name": "search",
+				"link": "/",
+				"items": []
+			},
+
+			"sheets": {
+				"name": "sheets",
+				"link": "/",
+				"items": [
+					{
+						"name": "bottom sheets",
+						"link": "/"
+					},
+					{
+						"name": "side sheets",
+						"link": "/"
+					}
+				]
+			},
+
+			"sliders": {
+				"name": "sliders",
+				"link": "/",
+				"items": []
+			},
+
+			"snackbar": {
+				"name": "snackbar",
+				"link": "/",
+				"items": []
+			},
+
+			"switch": {
+				"name": "switch",
+				"link": "/",
+				"items": []
+			},
+
+			"tabs": {
+				"name": "tabs",
+				"link": "/",
+				"items": []
+			},
+
+			"text_fields": {
+				"name": "text fields",
+				"link": "/",
+				"items": []
+			},
+
+			"time_pickers": {
+				"name": "time pickers",
+				"link": "/",
+				"items": []
+			},
+
+			"tooltips": {
+				"name": "tooltips",
+				"link": "/",
+				"items": []
+			}
+		}
+	},
+
+	"blog": {
+		"name": "Develop overview",
+		"link": "/",
+		"items": {}
+	}
+}
